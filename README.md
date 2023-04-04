@@ -1,2 +1,2 @@
 # stephanief.github.io
-It's mjy site!
+It's my site!
