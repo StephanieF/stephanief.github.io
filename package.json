@@ -1,0 +1,13 @@
+{
+  "name": "StephanieF",
+  "version": "1.0.0",
+  "description": "Personal Site",
+  "main": "index.js",
+  "repository": "git@github.com:StephanieF/stephanief.github.io.git",
+  "author": "Stephanie Fuda <stephaniefuda@stephaniecod.es>",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^8.4.31",
+    "stylelint": "^15.11.0"
+  }
+}

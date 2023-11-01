@@ -1,0 +1,21 @@
+name: stephaniecodes
+recipe: mean
+web:
+  appserver:
+    - stephaniecodes.lndo.site
+services:
+  node:
+    type: 'node:18'
+    command: npm start
+    scanner: false
+    ssl: false
+    sslExpose: false
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  gulp:
+    service: node
+  grunt:
+    service: node
