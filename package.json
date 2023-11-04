@@ -1,13 +1,8 @@
 {
-  "name": "StephanieF",
-  "version": "1.0.0",
-  "description": "Personal Site",
-  "main": "index.js",
-  "repository": "git@github.com:StephanieF/stephanief.github.io.git",
-  "author": "Stephanie Fuda <stephaniefuda@stephaniecod.es>",
-  "license": "MIT",
+  "name": "stephanief.github.io",
+  "packageManager": "yarn@4.0.1",
   "dependencies": {
-    "postcss": "^8.4.31",
-    "stylelint": "^15.11.0"
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
   }
 }
