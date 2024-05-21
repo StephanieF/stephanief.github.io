@@ -3,6 +3,21 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
+//
+// { full, light, bare } configs available.
+//
+//  full:  includes all available emojis support
+//  light: includes small subset of most useable emojis
+//  bare:  no defaults
+//
+// Also CJS & UMD builds available in `dist/` folder of published package,
+// if your env not supports ESM modules use.
+//
+import { full as emoji } from 'markdown-it-emoji'
+import markdownit from 'markdown-it'
+
+const md = markdownit().use(emoji/* , options */);
+
 export default defineUserConfig({
   lang: 'en-US',
 
@@ -138,5 +153,4 @@ export default defineUserConfig({
   ],
 
   bundler: viteBundler(),
-  theme: defaultTheme(),
 })
