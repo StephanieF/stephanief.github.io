@@ -30,6 +30,10 @@ export default defineUserConfig({
     navbar: [
       '/',
       {
+        text: 'About',
+        link: '/about/about.md',
+      },
+      {
         text: 'Article',
         link: '/article/',
       },
