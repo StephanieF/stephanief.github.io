@@ -21,17 +21,16 @@ const md = markdownit().use(emoji/* , options */);
 export default defineUserConfig({
   lang: 'en-US',
 
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: 'Stephanie Cod.es',
+  description: 'An engineer\'s website',
 
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
 
     navbar: [
-      '/',
       {
-        text: 'About',
-        link: '/about/about.md',
+        text: 'Home',
+        link: '/',
       },
       {
         text: 'Article',
