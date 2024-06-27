@@ -42,6 +42,3 @@ dist
 cache
 temp
 config.*.timestamp-*-*.*
-
-# YARN
-yarn.lock
