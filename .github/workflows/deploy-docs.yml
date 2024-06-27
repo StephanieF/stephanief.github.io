@@ -21,22 +21,23 @@ jobs:
           # if your docs needs submodules, uncomment the following line
           # submodules: true
 
-
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: 22.3.0
+          cache: 'yarn'
+
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Install Deps
-        run: npm ci
+        run: yarn install
 
       - name: Build Docs
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          npm run docs:build
+          yarn docs:build
           > docs/.vuepress/dist/.nojekyll
 
       - name: Deploy Docs
