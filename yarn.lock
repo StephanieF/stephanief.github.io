@@ -3353,6 +3353,7 @@ __metadata:
     "@vuepress/bundler-vite": "npm:^2.0.0-rc.14"
     "@vuepress/plugin-blog": "npm:^1.9.4"
     "@vuepress/theme-default": "npm:^2.0.0-rc.37"
+    striptags: "npm:^3.2.0"
     vuepress: "npm:^2.0.0-rc.14"
   languageName: unknown
   linkType: soft
@@ -3433,6 +3434,13 @@ __metadata:
   version: 3.1.1
   resolution: "striptags@npm:3.1.1"
   checksum: 10c0/695a6f885c41bedf41eef39ae30de8b5fe097e06e2874726cd9c05c3a6a15b72bb567e50b8e18b7ce87ef8822f0d5e9fed5f467c344858163682d51451c58835
+  languageName: node
+  linkType: hard
+
+"striptags@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "striptags@npm:3.2.0"
+  checksum: 10c0/72c8eea03c04ca8522511caf44ffd2bde4b5f36cbeb5d43140906c0a7ee19e98b3341bf96370ccb643e55972587eafac772d4a3f7f526d3045c2cf36270511e6
   languageName: node
   linkType: hard
 
