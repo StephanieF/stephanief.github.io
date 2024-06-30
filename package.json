@@ -15,6 +15,7 @@
     "vuepress": "^2.0.0-rc.14"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "striptags": "^3.2.0"
   }
 }
