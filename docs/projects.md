@@ -7,6 +7,5 @@ Everything is open source; please fork the work or comment back; the best code i
 ## 2024
 
 #### Personal Site
-Built in VuePress with a smattering of plugins. I've not yet had time to figure out custom theming<space><space>
-  but I'm not sure I want to.
+Built in VuePress with a smattering of plugins. I've not yet had time to figure out custom theming.
 [Personal Site Repo](https://github.com/StephanieF/stephanief.github.io)
