@@ -5,7 +5,7 @@ heroImage: StephanieCodes-Logo-2.png
 
 
 features:
-  - title: Technical Solutions Architect
+  - title: Solutions Architect
     details: To understand an organization's or project's technical and strategic goals, aligning them with the right technologies, and ensuring a seamless integration that drives efficiency and innovation are my primary responsibilities.
   - title: Drupal SME
     details: Expert guidance on best practices, customization, and optimization to ensure your Drupal projects meet both your business objectives and technical requirements.
