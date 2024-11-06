@@ -13,7 +13,7 @@ export default defineUserConfig({
   lang: 'en-US',
 
   title: 'Stephanie Fuda',
-  description: 'Behold! Now I am become developer, the greeter of worlds!',
+  description: 'Turning data chaos into organized knowledge',
 
   theme: defaultTheme({
     logo: 'StephanieCodes-Logo-2.png',
