@@ -17,8 +17,6 @@ features:
     details: Streamlining repetitive processes to enhance efficiency and productivity and eliminate time-consuming manual work to allow to focus on strategic activities and innovation.
   - title: Technical Writer
     details: Creating clear, concise documentation to bridge the gap between complex technology and audience understanding.
-  - title: HI DIANA!!!!
-    details: Coding for fun
 
 footer: 2024
 ---
