@@ -12,6 +12,26 @@ import { seoPlugin } from '@vuepress/plugin-seo'
 export default defineUserConfig({
   lang: 'en-US',
 
+  // Head links
+  head: [
+    [
+      'link',
+      { rel: 'apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png' }
+    ],
+    [
+      'link',
+      { rel: 'icon', href: '/favicon-32x32.png', type:'image/png', sizes:'32x32' }
+    ],
+    [
+      'link',
+      { rel: 'icon', href: '/favicon-16x16.png', type:'image/png', sizes:'16x16' }
+    ],
+    [
+      'link',
+      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }
+    ]
+  ],
+
   title: 'Stephanie Fuda',
   description: 'Turning data chaos into organized knowledge',
 

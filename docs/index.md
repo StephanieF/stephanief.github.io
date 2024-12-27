@@ -18,7 +18,7 @@ features:
   - title: Technical Writer
     details: Creating clear, concise documentation to bridge the gap between complex technology and audience understanding.
 
-footer: 2024
+footer: 2024-2025
 ---
 
  [//]: # "This is the content of home page. Check [Home Page Docs][default-theme-home] for more details"
