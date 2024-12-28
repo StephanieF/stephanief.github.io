@@ -28,7 +28,7 @@ export default defineUserConfig({
     ],
     [
       'link',
-      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3'}
     ]
   ],
 
@@ -64,25 +64,6 @@ export default defineUserConfig({
     seoPlugin({
       hostname: 'https://www.stephaniecod.es/'
     }),
-    docsearchPlugin({
-      // options
-      apikey: process.env.API_KEY,
-      indexName: process.env.INDEXNAME,
-      appId: process.env.APPID,
-      maxResultsPerGroup: 5,
-      locales: {
-        '/': {
-          placeholder: 'Search Documentation',
-          translations: {
-            button: {
-              buttonText: 'Search Documentation',
-            },
-          },
-        },
-      },
-    }),
   ],
-
-
   bundler: viteBundler(),
 })
