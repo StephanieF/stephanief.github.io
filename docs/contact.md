@@ -1,12 +1,22 @@
-# Hello from mars :satellite:
+# Contact :satellite:
+
 
 Hello! Is it me you're looking for?
+[StephanieFuda@proton.me](mailto:stephaniefuda@proton.me)
+
+
+
+
+
+
+
+faffing around with math formatting:
 
 $\sqrt{3x-1}+(1+x)^2$
 
-This is a normal page, which contains VuePress basics.
 
-This is an inline math example: \(E = mc^2\)
+
+This is an inline math example: $$\(E = mc^2\)$$
 
 
 $$
