@@ -38,7 +38,7 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: 'StephanieCodes-Logo-2.png',
 
-    navbar: ['/', '/projects'],
+    navbar: ['/', '/projects', '/contact'],
 
     // Assumes GitHub. Can also be a full GitLab url.
     repo: 'https://github.com/StephanieF',
