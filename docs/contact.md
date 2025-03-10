@@ -16,7 +16,7 @@ $\sqrt{3x-1}+(1+x)^2$
 
 
 
-This is an inline math example: $$\(E = mc^2\)$$
+Newton postulated that $\vec { F } = m \vec { a }$.
 
 
 $$
