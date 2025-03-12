@@ -6,9 +6,7 @@ Hello! Is it me you're looking for?
 [StephanieFuda@proton.me](mailto:stephaniefuda@proton.me)
 
 
-
-
-![Anti-Trust - War Machine](https://www.youtube.com/watch?v=3CM1_Ji6fJ8)
+<div style="width:100%;height:500px;" data-fillout-id="dTHtzztp4ius" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div><script src="https://server.fillout.com/embed/v1/"></script>
 
 
 faffing around with math formatting:
