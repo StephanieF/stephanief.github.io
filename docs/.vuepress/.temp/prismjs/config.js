@@ -4,6 +4,7 @@ import "/home/stephaniefuda/projects/stephanief.github.io/node_modules/@vuepress
 import "/home/stephaniefuda/projects/stephanief.github.io/node_modules/@vuepress/highlighter-helper/lib/client/styles/notation-highlight.css"
 import "/home/stephaniefuda/projects/stephanief.github.io/node_modules/@vuepress/highlighter-helper/lib/client/styles/collapsed-lines.css"
 import { setupCollapsedLines } from "/home/stephaniefuda/projects/stephanief.github.io/node_modules/@vuepress/highlighter-helper/lib/client/index.js"
+import "/home/stephaniefuda/projects/stephanief.github.io/node_modules/@vuepress/highlighter-helper/lib/client/styles/code-block-title.css"
 
 export default {
   setup() {
