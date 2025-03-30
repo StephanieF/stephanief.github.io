@@ -1,6 +1,8 @@
 #Algolia-Crawler-Verif: 1PBYZURK5L
 
-User-Agent: *
+User-agent: *
 Allow: /
+Disallow: /
 
-Sitemap: https://www.stephaniecod.es/sitemap.xml
+User-agent:*
+Disallow:
