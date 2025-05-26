@@ -2,7 +2,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /
 
 Sitemap: https://www.stephaniecod.es/sitemap.xml
 
