@@ -5,21 +5,23 @@ heroImage: StephanieCodes-Logo-2.png
 
 
 features:
-  - title: Solutions Architect
-    details: To understand an organization's or project's technical and strategic goals, aligning them with the right technologies, and ensuring a seamless integration that drives efficiency and innovation are my primary responsibilities.
-  - title: Drupal SME
-    details: Expert guidance on best practices, customization, and optimization to ensure your Drupal projects meet both your business objectives and technical requirements.
-  - title: Mathematician
-    details: Applying rigorous analytical and problem-solving skills to understand complex systems, uncover data patterns, and turn theoretical concepts into practical applications, to drive innovation and inform decision-making in diverse industries.
-  - title: ML/AI Enthusiast
-    details: My research focuses on developing innovative algorithms and models that can enhance decision-making, automate processes, and, most importantly, uncover valuable insights from data.
+  - title: Data Solutions Architect
+    details: Bridging 25 years of software engineering with modern data science to design scalable architectures. I transform raw data into actionable insights while aligning organizational goals with the right technologies.
+  - title: Data Pipeline Engineer
+    details: Building robust ETL/ELT processes that handle complex transformations at scale. I create reliable pipelines ensuring clean, validated data flows seamlessly from diverse sources into analytics-ready formats.
+  - title: Applied Mathematician
+    details: Translating mathematical concepts into practical data science solutions. I leverage statistical modeling, optimization techniques, and analytical frameworks to solve complex business problems across industries.
+  - title: ML/AI Practitioner
+    details: Developing production-ready machine learning models and AI systems that drive business outcomes. My focus spans from exploratory data analysis to deploying scalable ML pipelines that automate decision-making and uncover hidden patterns.
   - title: Ruthless Automation
-    details: Streamlining repetitive processes to enhance efficiency and productivity and eliminate time-consuming manual work to allow to focus on strategic activities and innovation.
-  - title: Technical Writer
-    details: Creating clear, concise documentation to bridge the gap between complex technology and audience understanding.
+    details: Creating intelligent systems that eliminate manual processes and optimize workflows.  I build data-driven automation that enhances productivity and enables teams to focus on strategic initiatives.
+  - title: Technical Communicator
+    details: Bridging the gap between complex data science and stakeholder understanding.  I create clear documentation and actionable insights—from executive dashboards to detailed technical specifications.
 
-footer: 2024-2025
+
+footer: 2025
 ---
+
 
  [//]: # "This is the content of home page. Check [Home Page Docs][default-theme-home] for more details"
 

@@ -1,13 +1,11 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
-import markdownIt from 'markdown-it'
 import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { googleTagManagerPlugin } from '@vuepress/plugin-google-tag-manager'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { sitemapPlugin } from '@vuepress/plugin-sitemap'
 import { seoPlugin } from '@vuepress/plugin-seo'
-
 
 export default defineUserConfig({
   lang: 'en-US',
