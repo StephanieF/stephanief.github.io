@@ -35,18 +35,15 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     logo: 'StephanieCodes-Logo-2.png',
-
-    navbar: ['/', '/projects'],
-
-    // Assumes GitHub. Can also be a full GitLab url.
+    navbar: ['/', '/projects', '/about'],
     repo: 'https://github.com/StephanieF',
-
-    // defaults to false, set to true to enable
     editLink: false,
-
-    // Enable last updated timestamp
     lastUpdated: true,
   }),
+
+  styles: {
+    index: './styles/index.scss'
+  },
 
   plugins: [
     markdownMathPlugin({
@@ -63,5 +60,6 @@ export default defineUserConfig({
       hostname: 'https://www.stephaniecod.es/'
     }),
   ],
+
   bundler: viteBundler(),
 })
