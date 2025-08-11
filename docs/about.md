@@ -6,6 +6,8 @@ sidebar:
         link: https://github.com/stephaniefuda
       - text: LinkedIn
         link: https://www.linkedin.com/in/stephanie-fuda/
+      - text: Drupal.org
+        link: https://www.drupal.org/u/stephaniefuda
       - text: Medium
         link: https://medium.com/@stephaniefuda
 ---
