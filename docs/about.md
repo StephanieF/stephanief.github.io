@@ -4,6 +4,8 @@ sidebar:
     children:
       - text: GitHub
         link: https://github.com/stephaniefuda
+      - text: Kaggle
+        link: https://www.kaggle.com/stephaniefuda
       - text: LinkedIn
         link: https://www.linkedin.com/in/stephanie-fuda/
       - text: Drupal.org
