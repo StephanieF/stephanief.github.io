@@ -9,8 +9,8 @@ features:
     details: Bridging 25 years of software engineering with modern data science to design scalable architectures. I transform raw data into actionable insights while aligning organizational goals with the right technologies.
   - title: Data Pipeline Engineer
     details: Building robust ETL/ELT processes that handle complex transformations at scale. I create reliable pipelines ensuring clean, validated data flows seamlessly from diverse sources into analytics-ready formats.
-  - title: Applied Mathematician
-    details: Translating mathematical concepts into practical data science solutions. I leverage statistical modeling, optimization techniques, and analytical frameworks to solve complex business problems across industries.
+  - title: Mathematician
+    details: Translating mathematical concepts into practical data science solutions. I leverage statistical modeling, optimization techniques, and analytical frameworks to solve complex business problems across industries through applied mathematics.
   - title: ML/AI Practitioner
     details: Developing production-ready machine learning models and AI systems that drive business outcomes. My focus spans from exploratory data analysis to deploying scalable ML pipelines that automate decision-making and uncover hidden patterns.
   - title: Ruthless Automation

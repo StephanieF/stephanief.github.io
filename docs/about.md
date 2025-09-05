@@ -12,6 +12,8 @@ sidebar:
         link: https://www.drupal.org/u/stephaniefuda
       - text: Medium
         link: https://medium.com/@stephaniefuda
+      - text: Goodreads
+        link: https://www.goodreads.com/user/show/163230124-stephanie
 ---
 
 
