@@ -27,6 +27,10 @@ export default defineUserConfig({
     [
       'link',
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3'}
+    ],
+    [
+      'script',
+      { src: '/sidebar-gtm.js' }
     ]
   ],
 
