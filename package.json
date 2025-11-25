@@ -28,6 +28,7 @@
     "vuepress": "^2.0.0-rc.7"
   },
   "dependencies": {
+    "@mathjax/src": "^4.0.0",
     "markdown-it": "^14.1.0",
     "markdown-it-emoji": "^3.0.0"
   }
