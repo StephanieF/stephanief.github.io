@@ -9,7 +9,6 @@ import * as clientConfig7 from '/home/stephaniefuda/projects/stephanief.github.i
 import * as clientConfig8 from '/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/markdown-tab/config.js'
 import * as clientConfig9 from '/home/stephaniefuda/projects/stephanief.github.io/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import * as clientConfig10 from '/home/stephaniefuda/projects/stephanief.github.io/node_modules/@vuepress/theme-default/lib/client/config.js'
-import * as clientConfig11 from '/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/markdown-math/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -23,5 +22,4 @@ export const clientConfigs = [
   clientConfig8,
   clientConfig9,
   clientConfig10,
-  clientConfig11,
 ].map((m) => m.default).filter(Boolean)
