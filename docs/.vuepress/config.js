@@ -41,8 +41,8 @@ export default defineUserConfig({
     logo: 'StephanieCodes-Logo-2.png',
     navbar: [
       '/',
-        { text: 'Insights', link: '/insights/' },
       '/projects',
+        { text: 'Insights', link: '/insights/' },
       '/about',
     ],
     repo: 'https://github.com/StephanieF',
