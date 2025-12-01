@@ -1,16 +1,3 @@
 import comp from "/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/pages/about.html.vue"
 const data = JSON.parse("{\"path\":\"/about.html\",\"title\":\"About 📡\",\"lang\":\"en-US\",\"frontmatter\":{\"sidebar\":[{\"text\":\"Hello! Is it me you're looking for?\",\"children\":[{\"text\":\"GitHub\",\"link\":\"https://github.com/stephaniefuda\"},{\"text\":\"Kaggle\",\"link\":\"https://www.kaggle.com/stephaniefuda\"},{\"text\":\"LinkedIn\",\"link\":\"https://www.linkedin.com/in/stephanie-fuda/\"},{\"text\":\"Drupal.org\",\"link\":\"https://www.drupal.org/u/stephaniefuda\"},{\"text\":\"Medium\",\"link\":\"https://medium.com/@stephaniefuda\"},{\"text\":\"Goodreads\",\"link\":\"https://www.goodreads.com/user/show/163230124-stephanie\"}]}],\"description\":\"About 📡 Throughout my 25+ year journey as a software engineer and data scientist, I've had the privilege of partnering with diverse teams to build scalable web platforms and un...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"About 📡\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-09-05T12:51:00.000Z\\\",\\\"author\\\":[]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://www.stephaniecod.es/about.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Stephanie Fuda\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"About 📡\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"About 📡 Throughout my 25+ year journey as a software engineer and data scientist, I've had the privilege of partnering with diverse teams to build scalable web platforms and un...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-09-05T12:51:00.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-09-05T12:51:00.000Z\"}]]},\"git\":{\"updatedTime\":1757076660000,\"contributors\":[{\"name\":\"Stephanie Fuda\",\"username\":\"\",\"email\":\"stephaniefuda@proton.me\",\"commits\":4}],\"changelog\":[{\"hash\":\"e56d224f17e289cb0b8c61eb0a215b5deda8a7a8\",\"time\":1757076660000,\"email\":\"stephaniefuda@proton.me\",\"author\":\"Stephanie Fuda\",\"message\":\"Updating homepage, adding Goodreads\"},{\"hash\":\"f86bd19fb30a9a109dea1e12d247f9545178c7cb\",\"time\":1755180872000,\"email\":\"stephaniefuda@proton.me\",\"author\":\"Stephanie Fuda\",\"message\":\"Adding Kaggle\"},{\"hash\":\"a039e0e57f8da8e87a36119b2e963163e35902d4\",\"time\":1754934655000,\"email\":\"stephaniefuda@proton.me\",\"author\":\"Stephanie Fuda\",\"message\":\"adding Drupal link\"},{\"hash\":\"80b341afee8df48f9e08433bd8fa01b3a38fbbd9\",\"time\":1754518893000,\"email\":\"stephaniefuda@proton.me\",\"author\":\"Stephanie Fuda\",\"message\":\"adding about page and styling\"}]},\"filePathRelative\":\"about.md\",\"autoDesc\":true}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

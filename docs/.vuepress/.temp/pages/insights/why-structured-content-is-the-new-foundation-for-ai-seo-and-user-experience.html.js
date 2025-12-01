@@ -1,16 +1,3 @@
 import comp from "/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/pages/insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience.html.vue"
 const data = JSON.parse("{\"path\":\"/insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience.html\",\"title\":\"Why Structured Content Is the New Foundation for AI, SEO, and User Experience\",\"lang\":\"en-US\",\"frontmatter\":{\"description\":\"Why Structured Content Is the New Foundation for AI, SEO, and User Experience Author: Stephanie Fuda Published: November 30, 2025 Over the past few decades, organizations have s...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Why Structured Content Is the New Foundation for AI, SEO, and User Experience\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2025-12-01T00:39:08.000Z\\\",\\\"author\\\":[]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://www.stephaniecod.es/insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"Stephanie Fuda\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Why Structured Content Is the New Foundation for AI, SEO, and User Experience\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Why Structured Content Is the New Foundation for AI, SEO, and User Experience Author: Stephanie Fuda Published: November 30, 2025 Over the past few decades, organizations have s...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2025-12-01T00:39:08.000Z\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2025-12-01T00:39:08.000Z\"}]]},\"git\":{\"updatedTime\":1764549548000,\"contributors\":[{\"name\":\"Stephanie Fuda\",\"username\":\"\",\"email\":\"stephaniefuda@stephaniecod.es\",\"commits\":1}],\"changelog\":[{\"hash\":\"dad18242fa5732026c8e048e7200cd966dc7db6f\",\"time\":1764549548000,\"email\":\"stephaniefuda@stephaniecod.es\",\"author\":\"Stephanie Fuda\",\"message\":\"Add insights post\"}]},\"filePathRelative\":\"insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience.md\",\"autoDesc\":true}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
