@@ -42,7 +42,7 @@ export default defineUserConfig({
     navbar: [
       '/',
       '/projects',
-        { text: 'Insights', link: '/insights/' },
+      '/insights/',
       '/about',
     ],
     repo: 'https://github.com/StephanieF',
