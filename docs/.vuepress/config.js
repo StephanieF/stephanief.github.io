@@ -62,11 +62,11 @@ export default defineUserConfig({
       id: 'GTM-PDKZZTJT',
     }),
     sitemapPlugin({
-      hostname: 'https://www.stephaniecod.es/',
+      hostname: 'https://www.stephanie.codes/',
       outFile: 'sitemap.xml'
     }),
     seoPlugin({
-      hostname: 'https://www.stephaniecod.es/'
+      hostname: 'https://www.stephanie.codes/'
     }),
   ],
 
