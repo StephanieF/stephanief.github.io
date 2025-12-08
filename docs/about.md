@@ -14,8 +14,38 @@ sidebar:
         link: https://medium.com/@stephaniefuda
       - text: Goodreads
         link: https://www.goodreads.com/user/show/163230124-stephanie
+head:
+  - - script
+    - { type: "application/ld+json" }
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "@id": "https://stephanief.github.io/about/#about",
+        "url": "https://stephanief.github.io/about/",
+        "name": "About — Stephanie Fuda",
+        "description": "Profile and background of Stephanie Fuda: software engineer and data scientist focused on full-stack development, analytics, and SEO.",
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://stephanief.github.io/#stephanie-fuda",
+          "name": "Stephanie Fuda",
+          "url": "https://stephanief.github.io/about/",
+          "sameAs": [
+            "https://github.com/stephaniefuda",
+            "https://www.kaggle.com/stephaniefuda",
+            "https://www.linkedin.com/in/stephanie-fuda/",
+            "https://medium.com/@stephaniefuda",
+            "https://www.goodreads.com/user/show/163230124-stephanie"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://stephanief.github.io/#org",
+          "name": "Stephanie Fuda",
+          "url": "https://stephanief.github.io/"
+        }
+      }
 ---
-
 
 # Hello! Is it me you're looking for?
 
