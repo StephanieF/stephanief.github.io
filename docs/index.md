@@ -20,6 +20,41 @@ features:
 
 
 footer: 2025
+
+head:
+  - - script
+    - { type: "application/ld+json" }
+    - |
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://stephanief.github.io/#website",
+            "url": "https://stephanief.github.io/",
+            "name": "Stephanie Fuda — Data Solutions Architect",
+            "description": "Portfolio of Stephanie Fuda — software engineer, data scientist, and consultant specializing in data architectures, ML, and SEO.",
+            "publisher": {
+              "@id": "https://stephanief.github.io/#org"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://stephanief.github.io/#org",
+            "name": "Stephanie Fuda",
+            "url": "https://stephanief.github.io/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://stephanief.github.io/StephanieCodes-Logo-2.png"
+            },
+            "sameAs": [
+              "https://github.com/stephaniefuda",
+              "https://www.kaggle.com/stephaniefuda",
+              "https://www.linkedin.com/in/stephanie-fuda/"
+            ]
+          }
+        ]
+      }
 ---
 
 
