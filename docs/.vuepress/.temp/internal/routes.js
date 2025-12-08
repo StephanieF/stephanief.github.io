@@ -1,7 +1,7 @@
 export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
-  ["/about.html", { loader: () => import(/* webpackChunkName: "about.html" */"/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/pages/about.html.js"), meta: {"title":"About 📡"} }],
+  ["/about.html", { loader: () => import(/* webpackChunkName: "about.html" */"/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/pages/about.html.js"), meta: {"title":"Hello! Is it me you're looking for?"} }],
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Home"} }],
   ["/projects.html", { loader: () => import(/* webpackChunkName: "projects.html" */"/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/pages/projects.html.js"), meta: {"title":"Projects"} }],
   ["/insights/", { loader: () => import(/* webpackChunkName: "insights_index.html" */"/home/stephaniefuda/projects/stephanief.github.io/docs/.vuepress/.temp/pages/insights/index.html.js"), meta: {"title":"Insights"} }],

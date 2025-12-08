@@ -1,6 +1,6 @@
 ---
 sidebar:
-  - text: Hello! Is it me you're looking for?
+  - text: Elsewhere
     children:
       - text: GitHub
         link: https://github.com/stephaniefuda
@@ -17,7 +17,7 @@ sidebar:
 ---
 
 
-# About :satellite:
+# Hello! Is it me you're looking for?
 
 Throughout my 25+ year journey as a software engineer and data scientist, I've had the privilege of partnering with diverse teams to build scalable web platforms and uncover meaningful insights from data. What drives me most is the opportunity to create solutions that make a real difference for the people and organizations I work with.
 
