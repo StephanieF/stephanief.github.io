@@ -3,7 +3,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.stephaniecod.es/sitemap.xml
+Sitemap: https://www.stephanie.codes/sitemap.xml
 
 User-agent:*
 Disallow:
