@@ -14,9 +14,11 @@ The secondary goal was to start creating medium posts as a way to share knowledg
 
 [Lorem Ipsum Awesome](https://loremipsumawesome.com/)  [Repo](https://github.com/StephanieF/synthwave-lorem)  [Medium Post](https://medium.com/@stephaniefuda/from-zero-to-deployed-my-first-vibe-coding-experiment-cbf533c5f609)
 
-#### Visual Detective
+### Visual Detective
 
-Images manipulated by AI generation can be hard to spot by simply looking. This tool highlights and explains the changes made by AI tools
+Images manipulated by AI generation can be hard to spot by simply looking. This tool highlights and explains the changes made by AI tools.
+
+As an experiment in building tools for the ChatGPT ecosphere I've created an image review tool that let's you know if an image has been maniputlated by AI anhow/where those changes have been made to the image.
 [Visual Detective](https://chatgpt.com/g/g-DhaGfosbH-visual-detective)
 
 ## 2024
