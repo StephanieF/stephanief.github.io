@@ -8,7 +8,7 @@ features:
   - title: Data Solutions Architect
     details: With over 25 years of software engineering experience and modern data science expertise, I design scalable architectures that turn raw data into actionable insights while ensuring organizational goals align with the most effective technologies.
   - title: Data Pipeline Engineer
-    details: Building robust ETL/ELT processes that handle complex transformations at scale. I create reliable pipelines ensuring clean, validated data flows seamlessly from diverse sources into analytics-ready formats.
+    details: My focus is on developing reliable pipelines that ensure clean, validated data consistently flows from diverse sources into analytics-ready formats through robust ETL/ELT processes capable of handling complex, large-scale data transformations.
   - title: Mathematician
     details: Translating mathematical concepts into practical data science solutions. I leverage statistical modeling, optimization techniques, and analytical frameworks to solve complex business problems across industries through applied mathematics.
   - title: ML/AI Practitioner
