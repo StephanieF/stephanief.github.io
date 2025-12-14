@@ -1,6 +1,6 @@
 <template><div><p>Over the past few decades, organizations have steadily adopted content management systems, experimented with decoupled architectures, and cycled through generation after generation of web frameworks.</p>
 <p>Underneath all of that, the real story is simpler and much more durable: <strong>structured content and structured data are becoming the primary interface to both humans <em>and</em> machines.</strong></p>
-<p><strong>How we model content, annotate it with standards like <a href="http://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a>, and expose it cleanly is what will determine whether AI systems, search engines, and real people can actually understand and safely use and reuse what we publish.</strong></p>
+<p><strong>How we model content, annotate it with standards like <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a>, and expose it cleanly is what will determine whether AI systems, search engines, and real people can actually understand and safely use and reuse what we publish.</strong></p>
 <h3 id="from-pages-for-people-to-data-for-humans-and-machines" tabindex="-1"><a class="header-anchor" href="#from-pages-for-people-to-data-for-humans-and-machines"><span>From pages for people to data for humans <em>and</em> machines</span></a></h3>
 <p>Historically, the web was page-centric. We talked about “pages”, “layouts”, and “templates,” and our CMS interfaces mirrored that mental model. Editors thought in terms of layout and visual tweaks; developers thought in terms of routes and components.</p>
 <p>What changed:</p>
@@ -24,7 +24,7 @@
 <li>Structured fields become <strong>reliable features</strong> for search indexes, analytics, and personalization engines.</li>
 <li>LLMs and agents can rely on those fields as <strong>facts with clear meaning</strong>, instead of guessing from messy prose.</li>
 </ul>
-<h3 id="why-schema-org-matters-more-in-the-ai-era-than-it-did-in-the-10-blue-links-era" tabindex="-1"><a class="header-anchor" href="#why-schema-org-matters-more-in-the-ai-era-than-it-did-in-the-10-blue-links-era"><span>Why [<a href="http://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a>] matters more in the AI era than it did in the “10 blue links” era</span></a></h3>
+<h3 id="why-schema-org-matters-more-in-the-ai-era-than-it-did-in-the-10-blue-links-era" tabindex="-1"><a class="header-anchor" href="#why-schema-org-matters-more-in-the-ai-era-than-it-did-in-the-10-blue-links-era"><span>Why [<a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a>] matters more in the AI era than it did in the “10 blue links” era</span></a></h3>
 <p>In the old search world, you could sometimes get away with unstructured HTML as long as your copy was decent and your technical SEO was not completely broken. Structured data (JSON‑LD, microdata) was mostly about “rich results”: star ratings, FAQ accordions, breadcrumbs.</p>
 <p>In the AI era, that is no longer enough.</p>
 <p><strong>LLMs, AI Overviews, and custom agents need machine-readable truth.</strong> They need to know:</p>
@@ -33,13 +33,13 @@
 <li>How those entities are related (this Doctor works at this Hospital, this Event is at this Location, this Article is about this Condition).</li>
 <li>Which facts are canonical and current.</li>
 </ul>
-<p><a href="http://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> is not perfect, but it is <strong>the closest thing we have to a shared vocabulary for these facts.</strong> When you express your content models in <a href="http://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> terms and publish JSON‑LD:</p>
+<p><a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> is not perfect, but it is <strong>the closest thing we have to a shared vocabulary for these facts.</strong> When you express your content models in <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> terms and publish JSON‑LD:</p>
 <ul>
 <li>Search engines and AI systems can <strong>disambiguate entities</strong> instead of guessing based on string matches.</li>
 <li>Your site becomes easier to join into <strong>larger knowledge graphs</strong>—public (Google, Bing) and private (your own internal KG).</li>
 <li>Agents have a much better chance of pulling the right facts, for the right audience, at the right time.</li>
 </ul>
-<p>Put bluntly: <a href="http://schema.org" target="_blank" rel="noopener noreferrer">**schema.org</a> is not just an SEO feature; it is a prerequisite for being legible to AI.**</p>
+<p>Put bluntly: <a href="https://schema.org" target="_blank" rel="noopener noreferrer">**schema.org</a> is not just an SEO feature; it is a prerequisite for being legible to AI.**</p>
 <h3 id="structured-content-→-better-ai-behavior" tabindex="-1"><a class="header-anchor" href="#structured-content-→-better-ai-behavior"><span>Structured content → better AI behavior</span></a></h3>
 <p>Most RAG and agent architectures follow the same pattern:</p>
 <ol>
@@ -84,7 +84,7 @@
 <li><strong>Pick one high‑value flow.</strong> For example, a ocation finder, a program directory, or a product catalog.</li>
 <li><strong>Model the content as data.</strong> Define content types, fields, relationships, and naming conventions. Capture what <em>people actually do</em> (sponsored names, nicknames, seasonal locations) instead of pretending reality is simpler.</li>
 <li><strong>Enforce structure in the CMS.</strong> Use field types, validation, and permissions. Put your best guidance in help text, not in a PDF nobody reads.</li>
-<li><strong>Publish JSON‑LD.</strong> Map your content model to <a href="http://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> and ship valid, linked structured data for that flow.</li>
+<li><strong>Publish JSON‑LD.</strong> Map your content model to <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> and ship valid, linked structured data for that flow.</li>
 <li><strong>Index first.</strong> Feed the content into search (Elasticsearch, OpenSearch, Algolia, etc.) and/or a vector store with good metadata to ensure you have a solid data layer that can support both traditional search experiences and future AI-powered use cases.</li>
 <li><strong>Experiment with AI safely.</strong> Start with assistive use cases (grammar improvements, drafting, content classification) where an editor stays in the loop. Add RAG-based validation before anything auto-publishes.</li>
 <li><strong>Measure outcomes.</strong> Track load time, search visibility, CTR, conversion, editor time saved, and error rates.</li>
@@ -103,7 +103,7 @@
 <p><em>If an AI agent or a search engine looked only at our structured data and content models, would it understand who we are, what we offer, and who we serve?</em></p>
 </blockquote>
 <p>If the answer is “not really,” that is your roadmap.</p>
-<p>Start small, pick one slice of your domain, and treat structured content and <a href="http://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> as first‑class citizens. Everything else in your stack gets better when you do.</p>
+<p>Start small, pick one slice of your domain, and treat structured content and <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> as first‑class citizens. Everything else in your stack gets better when you do.</p>
 </div></template>
 
 

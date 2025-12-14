@@ -60,7 +60,7 @@ Over the past few decades, organizations have steadily adopted content managemen
 
 Underneath all of that, the real story is simpler and much more durable: **structured content and structured data are becoming the primary interface to both humans *and* machines.**
 
-**How we model content, annotate it with standards like [schema.org](http://schema.org), and expose it cleanly is what will determine whether AI systems, search engines, and real people can actually understand and safely use and reuse what we publish.**
+**How we model content, annotate it with standards like [schema.org](https://schema.org), and expose it cleanly is what will determine whether AI systems, search engines, and real people can actually understand and safely use and reuse what we publish.**
 
 ### From pages for people to data for humans *and* machines
 
@@ -90,7 +90,7 @@ The result is “stealth governance”: editors get guidance without sitting thr
 - Structured fields become **reliable features** for search indexes, analytics, and personalization engines.
 - LLMs and agents can rely on those fields as **facts with clear meaning**, instead of guessing from messy prose.
 
-### Why [[schema.org](http://schema.org)] matters more in the AI era than it did in the “10 blue links” era
+### Why [[schema.org](https://schema.org)] matters more in the AI era than it did in the “10 blue links” era
 
 In the old search world, you could sometimes get away with unstructured HTML as long as your copy was decent and your technical SEO was not completely broken. Structured data (JSON‑LD, microdata) was mostly about “rich results”: star ratings, FAQ accordions, breadcrumbs.
 
@@ -102,13 +102,13 @@ In the AI era, that is no longer enough.
 - How those entities are related (this Doctor works at this Hospital, this Event is at this Location, this Article is about this Condition).
 - Which facts are canonical and current.
 
-[schema.org](http://schema.org) is not perfect, but it is **the closest thing we have to a shared vocabulary for these facts.** When you express your content models in [schema.org](http://schema.org) terms and publish JSON‑LD:
+[schema.org](https://schema.org) is not perfect, but it is **the closest thing we have to a shared vocabulary for these facts.** When you express your content models in [schema.org](https://schema.org) terms and publish JSON‑LD:
 
 - Search engines and AI systems can **disambiguate entities** instead of guessing based on string matches.
 - Your site becomes easier to join into **larger knowledge graphs**—public (Google, Bing) and private (your own internal KG).
 - Agents have a much better chance of pulling the right facts, for the right audience, at the right time.
 
-Put bluntly: [**schema.org](http://schema.org) is not just an SEO feature; it is a prerequisite for being legible to AI.**
+Put bluntly: [**schema.org](https://schema.org) is not just an SEO feature; it is a prerequisite for being legible to AI.**
 
 ### Structured content → better AI behavior
 
@@ -161,7 +161,7 @@ Here is a pragmatic, incremental path that came up again and again at Decoupled 
 1. **Pick one high‑value flow.** For example, a ocation finder, a program directory, or a product catalog.
 2. **Model the content as data.** Define content types, fields, relationships, and naming conventions. Capture what *people actually do* (sponsored names, nicknames, seasonal locations) instead of pretending reality is simpler.
 3. **Enforce structure in the CMS.** Use field types, validation, and permissions. Put your best guidance in help text, not in a PDF nobody reads.
-4. **Publish JSON‑LD.** Map your content model to [schema.org](http://schema.org) and ship valid, linked structured data for that flow.
+4. **Publish JSON‑LD.** Map your content model to [schema.org](https://schema.org) and ship valid, linked structured data for that flow.
 5. **Index first.** Feed the content into search (Elasticsearch, OpenSearch, Algolia, etc.) and/or a vector store with good metadata to ensure you have a solid data layer that can support both traditional search experiences and future AI-powered use cases.
 6. **Experiment with AI safely.** Start with assistive use cases (grammar improvements, drafting, content classification) where an editor stays in the loop. Add RAG-based validation before anything auto-publishes.
 7. **Measure outcomes.** Track load time, search visibility, CTR, conversion, editor time saved, and error rates.
@@ -185,4 +185,4 @@ If you are choosing what to prioritize this year, it is worth asking a simple qu
 
 If the answer is “not really,” that is your roadmap.
 
-Start small, pick one slice of your domain, and treat structured content and [schema.org](http://schema.org) as first‑class citizens. Everything else in your stack gets better when you do.
+Start small, pick one slice of your domain, and treat structured content and [schema.org](https://schema.org) as first‑class citizens. Everything else in your stack gets better when you do.
