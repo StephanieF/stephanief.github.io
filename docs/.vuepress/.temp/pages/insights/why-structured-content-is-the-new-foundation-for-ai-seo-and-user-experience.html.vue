@@ -3,7 +3,7 @@
 <p><strong>How we model content, annotate it with standards like <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a>, and expose it cleanly is what will determine whether AI systems, search engines, and real people can actually understand and safely use and reuse what we publish.</strong></p>
 <h3 id="from-pages-for-people-to-data-for-humans-and-machines" tabindex="-1"><a class="header-anchor" href="#from-pages-for-people-to-data-for-humans-and-machines"><span>From pages for people to data for humans <em>and</em> machines</span></a></h3>
 <p>Historically, the web was page-centric. We talked about “pages”, “layouts”, and “templates,” and our CMS interfaces mirrored that mental model. Editors thought in terms of layout and visual tweaks; developers thought in terms of routes and components.</p>
-<p>What changed:</p>
+<p>What changed?</p>
 <ul>
 <li><strong>Headless and decoupled</strong> setups separated content from presentation, forcing us to think about content types, fields, and relationships instead of just screens.</li>
 <li><strong>Component systems</strong> (design systems, JS component libraries, etc) introduced “content blocks” that can be reused, remixed, and targeted across channels.</li>
@@ -19,7 +19,7 @@
 <li><strong>Help text and validation</strong> embedded directly in the authoring UI, catching problems where they happen.</li>
 <li><strong>Separate content types</strong> for things that change on different timelines (for example, clinic locations vs. clinic contact info; department canonical name vs. sponsored nickname).</li>
 </ul>
-<p>The result is “stealth governance”: editors get guidance without sitting through a 50‑page policy document. For AI and SEO, the upside is even bigger:</p>
+<p>The result is &quot;stealth governance&quot;: editors get guidance without having to sit through a 50‑page policy document. For AI and SEO, the upside is even bigger:</p>
 <ul>
 <li>Structured fields become <strong>reliable features</strong> for search indexes, analytics, and personalization engines.</li>
 <li>LLMs and agents can rely on those fields as <strong>facts with clear meaning</strong>, instead of guessing from messy prose.</li>
@@ -36,7 +36,7 @@
 <p><a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> is not perfect, but it is <strong>the closest thing we have to a shared vocabulary for these facts.</strong> When you express your content models in <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> terms and publish JSON‑LD:</p>
 <ul>
 <li>Search engines and AI systems can <strong>disambiguate entities</strong> instead of guessing based on string matches.</li>
-<li>Your site becomes easier to join into <strong>larger knowledge graphs</strong>—public (Google, Bing) and private (your own internal KG).</li>
+<li>Your site becomes easier to join into <strong>larger knowledge graphs</strong>, public (Google, Bing), and private (your own internal KG).</li>
 <li>Agents have a much better chance of pulling the right facts, for the right audience, at the right time.</li>
 </ul>
 <p>Put bluntly: <a href="https://schema.org" target="_blank" rel="noopener noreferrer">**schema.org</a> is not just an SEO feature; it is a prerequisite for being legible to AI.**</p>
@@ -86,7 +86,7 @@
 <li><strong>Enforce structure in the CMS.</strong> Use field types, validation, and permissions. Put your best guidance in help text, not in a PDF nobody reads.</li>
 <li><strong>Publish JSON‑LD.</strong> Map your content model to <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> and ship valid, linked structured data for that flow.</li>
 <li><strong>Index first.</strong> Feed the content into search (Elasticsearch, OpenSearch, Algolia, etc.) and/or a vector store with good metadata to ensure you have a solid data layer that can support both traditional search experiences and future AI-powered use cases.</li>
-<li><strong>Experiment with AI safely.</strong> Start with assistive use cases (grammar improvements, drafting, content classification) where an editor stays in the loop. Add RAG-based validation before anything auto-publishes.</li>
+<li><strong>Experiment with AI safely.</strong> Start with assistive use cases (grammar improvements, drafting, content classification) that keep the editor in the loop. Add RAG-based validation before anything auto-publishes.</li>
 <li><strong>Measure outcomes.</strong> Track load time, search visibility, CTR, conversion, editor time saved, and error rates.</li>
 </ol>
 <p>Done well, this loop creates the political capital to expand the model to more content types, more channels, and more ambitious AI use cases.</p>
