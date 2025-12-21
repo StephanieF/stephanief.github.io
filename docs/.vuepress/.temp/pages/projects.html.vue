@@ -14,6 +14,11 @@
 <h3 id="personal-site" tabindex="-1"><a class="header-anchor" href="#personal-site"><span>Personal Site</span></a></h3>
 <p>Built in VuePress with a smattering of plugins. I've not yet had time to figure out custom theming.
 <a href="https://github.com/StephanieF/stephanief.github.io" target="_blank" rel="noopener noreferrer">Personal Site Repo</a></p>
+<h2 id="_2022" tabindex="-1"><a class="header-anchor" href="#_2022"><span>2022</span></a></h2>
+<h3 id="vscode-php" tabindex="-1"><a class="header-anchor" href="#vscode-php"><span>VSCode - PHP</span></a></h3>
+<p>As an ubuntu user, getting a PHP executable file set up in a way where my VSCode, Terminus ans other applications could find it, without having to maintain a full php install on my machines was a bit of a hassle.</p>
+<p>I've created a docker image, with instructions on how to set up and remove a container and use it as a local executable.
+<a href="https://github.com/StephanieF/vscode-php" target="_blank" rel="noopener noreferrer">VSCode - PHP</a></p>
 </div></template>
 
 

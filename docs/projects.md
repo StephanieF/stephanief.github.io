@@ -27,3 +27,11 @@ As an experiment in building tools for the ChatGPT ecosphere I've created an ima
 
 Built in VuePress with a smattering of plugins. I've not yet had time to figure out custom theming.
 [Personal Site Repo](https://github.com/StephanieF/stephanief.github.io)
+
+## 2022
+
+### VSCode - PHP
+As an ubuntu user, getting a PHP executable file set up in a way where my VSCode, Terminus ans other applications could find it, without having to maintain a full php install on my machines was a bit of a hassle.
+
+I've created a docker image, with instructions on how to set up and remove a container and use it as a local executable.
+[VSCode - PHP](https://github.com/StephanieF/vscode-php)
