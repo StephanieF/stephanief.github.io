@@ -35,7 +35,7 @@ export default defineUserConfig({
   ],
 
   title: 'Stephanie Fuda',
-  description: 'Turning data chaos into organized knowledge',
+  description: 'Turning data chaos into organized, discoverable knowledge',
 
   theme: defaultTheme({
     logo: 'StephanieCodes-Logo-2.png',

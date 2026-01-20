@@ -5,21 +5,21 @@ heroImage: StephanieCodes-Logo-2.png
 
 
 features:
-  - title: Data Solutions Architect
-    details: With over 25 years of software engineering experience and modern data science expertise, I design scalable architectures that turn raw data into actionable insights while ensuring organizational goals align with the most effective technologies.
+  - title: Data Architecture & Engineering
+    details: I design scalable architectures and develop reliable pipelines that transform raw data into actionable insights, ensuring clean, validated data consistently flows from diverse sources into analytics-ready formats through robust ETL/ELT processes.
   - title: Data Pipeline Engineer
     details: My focus is on developing reliable pipelines that ensure clean, validated data consistently flows from diverse sources into analytics-ready formats through robust ETL/ELT processes capable of handling complex, large-scale data transformations.
   - title: Mathematician
     details: Translating mathematical concepts into practical data science solutions. I leverage statistical modeling, optimization techniques, and analytical frameworks to solve complex business problems across industries through applied mathematics.
   - title: ML/AI Practitioner
     details: Developing production-ready machine learning models and AI systems that drive business outcomes. My focus spans from exploratory data analysis to deploying scalable ML pipelines that automate decision-making and uncover hidden patterns.
-  - title: Ruthless Automation
-    details: Creating intelligent systems that eliminate manual processes and optimize workflows.  I build data-driven automation that enhances productivity and enables teams to focus on strategic initiatives.
+  - title: SEO/GEO Technical Consultant
+    details: Architecting discoverability strategies that bridge traditional search optimization and generative AI platforms to ensure that content surfaces effectively in both search engines and AI-powered answer systems.
   - title: Technical Communicator
     details: Bridging the gap between complex data science and stakeholder understanding by translating intricate concepts into clear documentation and actionable insights, ranging from executive dashboards to detailed technical specifications.
 
 
-footer: 2025
+footer: 2026
 
 head:
   - - script

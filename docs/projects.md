@@ -1,6 +1,8 @@
 # Projects
 
-Personal software engineering projects allow me to practice technical skills, problem-solving abilities, and creativity by experimenting with languages and products that I may not use during the execution of my daily work.
+Personal software engineering projects allow me to practice technical skills, problem-solving abilities, and creativity by experimenting with languages, products, and optimization strategies that I may not use during the execution of my daily work. 
+
+From performance optimization to discoverability architecture, these projects showcase both technical implementation and strategic thinking.
 
 Everything is open source; please fork the work or comment back; the best code is collaborative.
 
