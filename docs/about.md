@@ -20,30 +20,64 @@ head:
     - |
       {
         "@context": "https://schema.org",
-        "@type": "AboutPage",
-        "@id": "https://stephanief.github.io/about/#about",
-        "url": "https://stephanief.github.io/about/",
-        "name": "About — Stephanie Fuda",
-        "description": "Profile and background of Stephanie Fuda: software engineer and data scientist focused on full-stack development, analytics, and SEO.",
-        "mainEntity": {
-          "@type": "Person",
-          "@id": "https://stephanief.github.io/#stephanie-fuda",
-          "name": "Stephanie Fuda",
-          "url": "https://stephanief.github.io/about/",
-          "sameAs": [
-            "https://github.com/stephaniefuda",
-            "https://www.kaggle.com/stephaniefuda",
-            "https://www.linkedin.com/in/stephanie-fuda/",
-            "https://medium.com/@stephaniefuda",
-            "https://www.goodreads.com/user/show/163230124-stephanie"
-          ]
-        },
-        "publisher": {
-          "@type": "Organization",
-          "@id": "https://stephanief.github.io/#org",
-          "name": "Stephanie Fuda",
-          "url": "https://stephanief.github.io/"
-        }
+        "@graph": [
+          {
+            "@type": "AboutPage",
+            "@id": "https://stephanief.github.io/about/#page",
+            "url": "https://stephanief.github.io/about/",
+            "name": "About — Stephanie Fuda",
+            "description": "Profile and background of Stephanie Fuda: software engineer and data scientist with 25+ years of experience in full-stack development, data science, analytics, and technical SEO.",
+            "isPartOf": {
+              "@id": "https://stephanief.github.io/#website"
+            },
+            "mainEntity": {
+              "@id": "https://stephanief.github.io/#person"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://stephanief.github.io/#person",
+            "name": "Stephanie Fuda",
+            "url": "https://stephanief.github.io/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://stephanief.github.io/StephanieCodes-Logo-2.png",
+              "width": 200,
+              "height": 200
+            },
+            "jobTitle": [
+              "Data Solutions Architect",
+              "Software Engineer",
+              "Data Scientist",
+              "ML/AI Practitioner",
+              "SEO/GEO Technical Consultant",
+              "Full-Stack Developer"
+            ],
+            "description": "Software engineer and data scientist with 25+ years of experience specializing in scalable web platforms, data analysis, machine learning, and technical SEO strategies.",
+            "workLocation": {
+              "@type": "Place",
+              "name": "Remote"
+            },
+            "sameAs": [
+              "https://github.com/stephaniefuda",
+              "https://www.kaggle.com/stephaniefuda",
+              "https://www.linkedin.com/in/stephanie-fuda/",
+              "https://medium.com/@stephaniefuda",
+              "https://www.goodreads.com/user/show/163230124-stephanie",
+              "https://www.drupal.org/u/stephaniefuda"
+            ],
+            "knowsAbout": [
+              "Full-Stack Web Development",
+              "Data Science",
+              "Machine Learning",
+              "Data Engineering",
+              "Technical SEO",
+              "Generative Engine Optimization",
+              "Performance Optimization",
+              "Architecture Design"
+            ]
+          }
+        ]
       }
 ---
 
