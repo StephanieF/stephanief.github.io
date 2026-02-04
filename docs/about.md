@@ -93,4 +93,8 @@ The convergence of traditional search and AI-powered answer engines has created 
 
 The most effective solutions emerge from understanding both the technical possibilities and the human needs behind them, which is why I focus on designing systems that are not only robust and scalable but also discoverable and genuinely aligned with what organizations are trying to achieve.
 
+I specialize in helping technical companies and data-driven organizations optimize for discoverability in the age of AI-powered search, combining deep technical knowledge with strategic content architecture to ensure visibility across both traditional search engines and emerging generative platforms.
+
 What excites me most is the chance to collaborate with teams who are working toward something meaningful, bringing both technical expertise and a genuine commitment to their success.
+
+Interested in working together? Explore my [GEO/AEO/SEO consulting services]().
