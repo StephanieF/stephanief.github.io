@@ -14,7 +14,7 @@ export default defineUserConfig({
   head: [
     [
       'link',
-      { rel: 'apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png' }
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }
     ],
     [
       'link',
@@ -31,6 +31,27 @@ export default defineUserConfig({
     [
       'script',
       { src: '/sidebar-gtm.js' }
+    ],
+    [
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Stephanie Fuda",
+            "url": "https://www.stephanie.codes/",
+            "logo": "https://www.stephanie.codes/StephanieCodes-Logo-2.png",
+            "sameAs": ["https://www.linkedin.com/in/stephanie-fuda/"]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Stephanie Fuda",
+            "url": "https://www.stephanie.codes/"
+          }
+        ]
+      })
     ]
   ],
 

@@ -2,6 +2,29 @@
 title: GEO, AEO & Technical SEO Consulting
 description: Future-proof your discoverability with expert optimization for AI-powered search, answer engines, and traditional SEO
 sidebar: false
+head:
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "GEO, AEO & Technical SEO Consulting",
+        "description": "Future-proof your discoverability with expert optimization for AI-powered search, answer engines, and traditional SEO",
+        "url": "https://stephanie.codes/consulting/",
+        "provider": {
+          "@type": "Person",
+          "name": "Stephanie Fuda",
+          "url": "https://stephanie.codes/",
+          "sameAs": ["https://www.linkedin.com/in/stephanie-fuda/"]
+        },
+        "areaServed": "Worldwide",
+        "serviceType": ["Generative Engine Optimization (GEO)", "Answer Engine Optimization (AEO)", "Technical SEO Audits & Implementation", "Analytics & Measurement", "Content Strategy"],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Technical companies, SaaS organizations, data-driven organizations"
+        }
+      }
 ---
 
 # GEO, AEO & Technical SEO Consulting
