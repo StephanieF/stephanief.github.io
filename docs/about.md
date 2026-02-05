@@ -23,25 +23,21 @@ head:
         "@graph": [
           {
             "@type": "AboutPage",
-            "@id": "https://stephanief.github.io/about/#page",
-            "url": "https://stephanief.github.io/about/",
+            "url": "https://www.stephanie.codes/about/",
             "name": "About — Stephanie Fuda",
             "description": "Profile and background of Stephanie Fuda: software engineer and data scientist with 25+ years of experience in full-stack development, data science, analytics, and technical SEO.",
-            "isPartOf": {
-              "@id": "https://stephanief.github.io/#website"
-            },
             "mainEntity": {
-              "@id": "https://stephanief.github.io/#person"
+              "@id": "https://www.stephanie.codes/#person"
             }
           },
           {
             "@type": "Person",
-            "@id": "https://stephanief.github.io/#person",
+            "@id": "https://www.stephanie.codes/#person",
             "name": "Stephanie Fuda",
-            "url": "https://stephanief.github.io/",
+            "url": "https://www.stephanie.codes/",
             "image": {
               "@type": "ImageObject",
-              "url": "https://stephanief.github.io/StephanieCodes-Logo-2.png",
+              "url": "https://www.stephanie.codes/StephanieCodes-Logo-2.png",
               "width": 200,
               "height": 200
             },
@@ -50,10 +46,11 @@ head:
               "Software Engineer",
               "Data Scientist",
               "ML/AI Practitioner",
-              "SEO/GEO Technical Consultant",
+              "Technical SEO Consultant",
+              "Generative Engine Optimization (GEO) Specialist",
               "Full-Stack Developer"
             ],
-            "description": "Software engineer and data scientist with 25+ years of experience specializing in scalable web platforms, data analysis, machine learning, and technical SEO strategies.",
+            "description": "Software engineer and data scientist with 25+ years of experience specializing in scalable web platforms, data analysis, machine learning, and technical SEO strategies for AI-powered search and answer engines.",
             "workLocation": {
               "@type": "Place",
               "name": "Remote"
@@ -62,9 +59,9 @@ head:
               "https://github.com/stephaniefuda",
               "https://www.kaggle.com/stephaniefuda",
               "https://www.linkedin.com/in/stephanie-fuda/",
+              "https://www.drupal.org/u/stephaniefuda",
               "https://medium.com/@stephaniefuda",
-              "https://www.goodreads.com/user/show/163230124-stephanie",
-              "https://www.drupal.org/u/stephaniefuda"
+              "https://www.goodreads.com/user/show/163230124-stephanie"
             ],
             "knowsAbout": [
               "Full-Stack Web Development",
@@ -72,9 +69,11 @@ head:
               "Machine Learning",
               "Data Engineering",
               "Technical SEO",
-              "Generative Engine Optimization",
+              "Generative Engine Optimization (GEO)",
+              "Answer Engine Optimization (AEO)",
+              "Content Architecture",
               "Performance Optimization",
-              "Architecture Design"
+              "Search Engine Optimization"
             ]
           }
         ]

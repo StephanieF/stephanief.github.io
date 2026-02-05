@@ -1,3 +1,7 @@
+---
+public: false
+---
+
 # VuePress Setup Guide
 
 **Published:** November 28, 2025
