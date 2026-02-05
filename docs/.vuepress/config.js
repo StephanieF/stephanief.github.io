@@ -84,7 +84,8 @@ export default defineUserConfig({
     }),
     sitemapPlugin({
       hostname: 'https://www.stephanie.codes/',
-      outFile: 'sitemap.xml'
+      outFile: 'sitemap.xml',
+      extraExcludes: ['/insights/vuepress-setup-guide.html']
     }),
     seoPlugin({
       hostname: 'https://www.stephanie.codes/'
