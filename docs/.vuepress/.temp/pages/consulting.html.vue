@@ -1,6 +1,7 @@
 <template><div><h1 id="geo-aeo-technical-seo-consulting" tabindex="-1"><a class="header-anchor" href="#geo-aeo-technical-seo-consulting"><span>GEO, AEO &amp; Technical SEO Consulting</span></a></h1>
 <h2 id="future-proof-your-discoverability-with-expert-optimization-for-ai-powered-search-answer-engines-and-traditional-seo" tabindex="-1"><a class="header-anchor" href="#future-proof-your-discoverability-with-expert-optimization-for-ai-powered-search-answer-engines-and-traditional-seo"><span>Future-proof your discoverability with expert optimization for AI-powered search, answer engines, and traditional SEO</span></a></h2>
-<p>The search landscape has fundamentally changed. Google AI Overviews, ChatGPT, Perplexity, and other AI platforms has transformed how people discover information.</p>
+<h3 id="the-search-landscape-has-fundamentally-changed" tabindex="-1"><a class="header-anchor" href="#the-search-landscape-has-fundamentally-changed"><span>The search landscape has fundamentally changed.</span></a></h3>
+<p>Google AI Overviews, ChatGPT, Perplexity, and other AI platforms has transformed how people discover information.</p>
 <p>I help technical companies and data-driven organizations build comprehensive discoverability strategies that work across traditional search engines, generative AI platforms, and answer engines.</p>
 <h3 id="why-work-with-me" tabindex="-1"><a class="header-anchor" href="#why-work-with-me"><span>Why Work With Me</span></a></h3>
 <ul>
@@ -8,7 +9,6 @@
 <li><strong>Analytics and measurable results</strong> - Every recommendation tied to data and business outcomes</li>
 <li><strong>Hands-on technical implementation</strong> - I write the code, not just the strategy documents</li>
 </ul>
-<hr>
 <h2 id="the-search-landscape-has-changed" tabindex="-1"><a class="header-anchor" href="#the-search-landscape-has-changed"><span>The Search Landscape Has Changed</span></a></h2>
 <p>Traditional SEO strategies aren't enough anymore. Your potential customers are getting answers from AI overviews, featured snippets, and conversational interfaces—often without clicking through to your website. If your content isn't optimized for these new discovery channels, you're invisible to a growing portion of your audience.</p>
 <h3 id="the-challenges-organizations-face" tabindex="-1"><a class="header-anchor" href="#the-challenges-organizations-face"><span>The Challenges Organizations Face</span></a></h3>
@@ -18,7 +18,6 @@
 <li><strong>Measuring success requires new analytics approaches</strong> - Traditional metrics don't capture AI visibility or answer engine performance</li>
 <li><strong>Most organizations lack the technical depth to optimize for GEO/AEO</strong> - This emerging field requires both search expertise and software engineering skills</li>
 </ul>
-<hr>
 <h2 id="how-i-can-help" tabindex="-1"><a class="header-anchor" href="#how-i-can-help"><span>How I Can Help</span></a></h2>
 <p>I combine technical implementation expertise with strategic thinking to build comprehensive discoverability programs. My background in software engineering, data science, and content architecture enables me to work at every level—from hands-on SQL analysis to strategic content planning.</p>
 <h3 id="generative-engine-optimization-geo-strategy" tabindex="-1"><a class="header-anchor" href="#generative-engine-optimization-geo-strategy"><span>Generative Engine Optimization (GEO) Strategy</span></a></h3>
@@ -79,7 +78,6 @@
 <li>Content workflow optimization</li>
 <li>Quality assurance frameworks</li>
 </ul>
-<hr>
 <h2 id="how-i-work" tabindex="-1"><a class="header-anchor" href="#how-i-work"><span>How I Work</span></a></h2>
 <p>My consulting approach combines strategic thinking with hands-on technical execution. I don't just provide recommendations—I work alongside your team to implement solutions and measure results.</p>
 <h3 id="_1-data-driven-discovery" tabindex="-1"><a class="header-anchor" href="#_1-data-driven-discovery"><span>1. Data-Driven Discovery</span></a></h3>
@@ -92,7 +90,6 @@
 <p>I establish clear metrics from day one and track progress rigorously. Regular reporting shows what's working, what isn't, and where to focus next. GEO and AEO require continuous experimentation—I help you build that capability internally.</p>
 <h3 id="_5-knowledge-transfer" tabindex="-1"><a class="header-anchor" href="#_5-knowledge-transfer"><span>5. Knowledge Transfer</span></a></h3>
 <p>I document everything and train your team so they can maintain and expand on the work. My goal is to build your organization's internal capability, not create dependence. You'll receive detailed documentation, code comments, and training materials.</p>
-<hr>
 <h2 id="why-choose-me" tabindex="-1"><a class="header-anchor" href="#why-choose-me"><span>Why Choose Me</span></a></h2>
 <h3 id="rare-combination-of-skills" tabindex="-1"><a class="header-anchor" href="#rare-combination-of-skills"><span>Rare Combination of Skills</span></a></h3>
 <p>Most SEO consultants lack deep technical skills. Most software engineers don't understand search optimization. I bridge this gap with 25+ years of software engineering experience, data science expertise, and proven GEO/AEO knowledge. This unique combination enables me to see opportunities others miss.</p>
@@ -104,7 +101,6 @@
 <p>Every recommendation ties to KPIs. Every implementation includes measurement. I use SQL and analytics tools to track progress and prove ROI. Data drives all decisions—from initial strategy to ongoing optimization.</p>
 <h3 id="collaborative-approach" tabindex="-1"><a class="header-anchor" href="#collaborative-approach"><span>Collaborative Approach</span></a></h3>
 <p>I work with your team, not around them. Clear communication, thorough documentation, and knowledge transfer ensure sustainable success beyond the engagement. I adapt to your workflow and integrate seamlessly with your existing teams.</p>
-<hr>
 <h2 id="who-i-work-best-with" tabindex="-1"><a class="header-anchor" href="#who-i-work-best-with"><span>Who I Work Best With</span></a></h2>
 <p>My consulting services are ideal for:</p>
 <h3 id="technical-companies-saas-organizations" tabindex="-1"><a class="header-anchor" href="#technical-companies-saas-organizations"><span>Technical Companies &amp; SaaS Organizations</span></a></h3>
@@ -115,7 +111,6 @@
 <p>GEO and AEO require experimentation and adaptation. The best clients are ready to test new approaches, measure results, and iterate based on data—even when it challenges existing practices. If your organization can move quickly and embrace change, we'll accomplish great things together.</p>
 <h3 id="teams-that-value-technical-depth" tabindex="-1"><a class="header-anchor" href="#teams-that-value-technical-depth"><span>Teams That Value Technical Depth</span></a></h3>
 <p>If you've worked with SEO consultants who couldn't code, couldn't explain their recommendations, or couldn't work directly with your engineering team, you'll appreciate my approach. I can dive deep into technical implementations and speak the language of both marketing and engineering.</p>
-<hr>
 <h2 id="how-we-can-work-together" tabindex="-1"><a class="header-anchor" href="#how-we-can-work-together"><span>How We Can Work Together</span></a></h2>
 <h3 id="project-based-consulting" tabindex="-1"><a class="header-anchor" href="#project-based-consulting"><span>Project-Based Consulting</span></a></h3>
 <p>Defined scope, timeline, and deliverables. Ideal for specific initiatives like technical audits, GEO strategy development, or analytics implementation. Typical engagements: 4-12 weeks.</p>
@@ -129,7 +124,6 @@
 <h3 id="training-workshops" tabindex="-1"><a class="header-anchor" href="#training-workshops"><span>Training &amp; Workshops</span></a></h3>
 <p>Custom training sessions for marketing teams, content creators, or developers on GEO/AEO best practices, technical SEO implementation, or analytics measurement.</p>
 <p><strong>Best for:</strong> Organizations building internal capabilities and wanting to level up their teams.</p>
-<hr>
 <h2 id="let-s-talk-about-your-discoverability-strategy" tabindex="-1"><a class="header-anchor" href="#let-s-talk-about-your-discoverability-strategy"><span>Let's Talk About Your Discoverability Strategy</span></a></h2>
 <p>The organizations that adapt fastest to AI-powered search will gain significant competitive advantages in visibility, traffic, and customer acquisition. The question isn't whether to optimize for GEO and AEO—it's when and how.</p>
 <p>I'd welcome the opportunity to discuss your specific situation and explore how we might work together.</p>

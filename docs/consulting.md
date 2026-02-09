@@ -58,7 +58,8 @@ head:
 
 ## Future-proof your discoverability with expert optimization for AI-powered search, answer engines, and traditional SEO
 
-The search landscape has fundamentally changed. Google AI Overviews, ChatGPT, Perplexity, and other AI platforms has transformed how people discover information.
+### The search landscape has fundamentally changed.
+Google AI Overviews, ChatGPT, Perplexity, and other AI platforms has transformed how people discover information.
 
 I help technical companies and data-driven organizations build comprehensive discoverability strategies that work across traditional search engines, generative AI platforms, and answer engines.
 
@@ -68,7 +69,7 @@ I help technical companies and data-driven organizations build comprehensive dis
 - **Analytics and measurable results** - Every recommendation tied to data and business outcomes
 - **Hands-on technical implementation** - I write the code, not just the strategy documents
 
----
+
 
 ## The Search Landscape Has Changed
 
@@ -81,7 +82,7 @@ Traditional SEO strategies aren't enough anymore. Your potential customers are g
 - **Measuring success requires new analytics approaches** - Traditional metrics don't capture AI visibility or answer engine performance
 - **Most organizations lack the technical depth to optimize for GEO/AEO** - This emerging field requires both search expertise and software engineering skills
 
----
+
 
 ## How I Can Help
 
@@ -155,7 +156,7 @@ Design content structures that work for both human readers and AI systems. I hel
 - Content workflow optimization
 - Quality assurance frameworks
 
----
+
 
 ## How I Work
 
@@ -181,7 +182,7 @@ I establish clear metrics from day one and track progress rigorously. Regular re
 
 I document everything and train your team so they can maintain and expand on the work. My goal is to build your organization's internal capability, not create dependence. You'll receive detailed documentation, code comments, and training materials.
 
----
+
 
 ## Why Choose Me
 
@@ -205,7 +206,7 @@ Every recommendation ties to KPIs. Every implementation includes measurement. I 
 
 I work with your team, not around them. Clear communication, thorough documentation, and knowledge transfer ensure sustainable success beyond the engagement. I adapt to your workflow and integrate seamlessly with your existing teams.
 
----
+
 
 ## Who I Work Best With
 
@@ -227,7 +228,7 @@ GEO and AEO require experimentation and adaptation. The best clients are ready t
 
 If you've worked with SEO consultants who couldn't code, couldn't explain their recommendations, or couldn't work directly with your engineering team, you'll appreciate my approach. I can dive deep into technical implementations and speak the language of both marketing and engineering.
 
----
+
 
 ## How We Can Work Together
 
@@ -255,7 +256,7 @@ Custom training sessions for marketing teams, content creators, or developers on
 
 **Best for:** Organizations building internal capabilities and wanting to level up their teams.
 
----
+
 
 ## Let's Talk About Your Discoverability Strategy
 
