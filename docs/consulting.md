@@ -1,7 +1,8 @@
 ---
 title: GEO, AEO & Technical SEO Consulting
 description: Future-proof your discoverability with expert optimization for AI-powered search, answer engines, and traditional SEO
-sidebar: false
+sidebar: heading
+sidebarDepth: 1
 head:
   - - script
     - type: application/ld+json
@@ -61,19 +62,21 @@ head:
 ### The search landscape has fundamentally changed.
 Google AI Overviews, ChatGPT, Perplexity, and other AI platforms has transformed how people discover information.
 
-I help technical companies and data-driven organizations build comprehensive discoverability strategies that work across traditional search engines, generative AI platforms, and answer engines.
+I build comprehensive discoverability strategies that work across traditional search engines, generative AI platforms, and answer engines.
 
 ### Why Work With Me
 
 - **25+ years software engineering + modern data science** - Rare combination of deep technical skills and search optimization expertise
 - **Analytics and measurable results** - Every recommendation tied to data and business outcomes
-- **Hands-on technical implementation** - I write the code, not just the strategy documents
+- **Hands-on technical implementation** - I can write the code, not just the strategy documents
 
 
 
 ## The Search Landscape Has Changed
 
-Traditional SEO strategies aren't enough anymore. Your potential customers are getting answers from AI overviews, featured snippets, and conversational interfaces—often without clicking through to your website. If your content isn't optimized for these new discovery channels, you're invisible to a growing portion of your audience.
+Traditional SEO strategies aren't enough anymore.
+
+Your potential customers are getting answers from AI overviews, featured snippets, and conversational interfaces, often without clicking through to your website. If your content isn't optimized for these new discovery channels, you're invisible to a rapidly growing portion of your audience.
 
 ### The Challenges Organizations Face
 
@@ -86,11 +89,11 @@ Traditional SEO strategies aren't enough anymore. Your potential customers are g
 
 ## How I Can Help
 
-I combine technical implementation expertise with strategic thinking to build comprehensive discoverability programs. My background in software engineering, data science, and content architecture enables me to work at every level—from hands-on SQL analysis to strategic content planning.
+I combine technical implementation expertise with strategic thinking to build comprehensive discoverability programs. My background in software engineering, data science, and content architecture enables me to work at every level, from hands-on SQL analysis to strategic content planning.
 
 ### Generative Engine Optimization (GEO) Strategy
 
-Ensure your content appears in AI overviews, ChatGPT responses, and other generative search results. I analyze how AI systems surface information, then architect your content to maximize visibility in these emerging channels.
+Ensure your content appears in AI overviews, ChatGPT responses, and other generative search results. I analyze how AI systems surface you information, then architect your content and content  structure to maximize visibility in these emerging channels.
 
 **What's included:**
 
@@ -264,10 +267,11 @@ The organizations that adapt fastest to AI-powered search will gain significant 
 
 I'd welcome the opportunity to discuss your specific situation and explore how we might work together.
 
-### Get In Touch
+<!--
+### Get In Touch -->
 
 <!-- - **Email:** [your-email@example.com](mailto:your-email@example.com)-->
-- **LinkedIn:** [Connect with me on LinkedIn](https://www.linkedin.com/in/stephanie-fuda/)
+<!-- - **LinkedIn:** [Connect with me on LinkedIn](https://www.linkedin.com/in/stephanie-fuda/) -->
 <!-- - **Schedule a consultation:** [Book a 30-minute call](#) --> <!-- Add your calendar link -->
 
 ### Next Steps

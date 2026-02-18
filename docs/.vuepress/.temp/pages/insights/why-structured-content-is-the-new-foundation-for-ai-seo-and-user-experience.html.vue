@@ -104,6 +104,8 @@
 </blockquote>
 <p>If the answer is “not really,” that is your roadmap.</p>
 <p>Start small, pick one slice of your domain, and treat structured content and <a href="https://schema.org" target="_blank" rel="noopener noreferrer">schema.org</a> as first‑class citizens. Everything else in your stack gets better when you do.</p>
+<h2 id="want-to-work-together" tabindex="-1"><a class="header-anchor" href="#want-to-work-together"><span>Want to work together?</span></a></h2>
+<p>If you're thinking about how to restructure your content, implement schema.org, or use data to drive your SEO/GEO/AEO performance <RouteLink to="/consulting.html">let's talk</RouteLink>.</p>
 </div></template>
 
 

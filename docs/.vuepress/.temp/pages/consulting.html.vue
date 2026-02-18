@@ -2,15 +2,16 @@
 <h2 id="future-proof-your-discoverability-with-expert-optimization-for-ai-powered-search-answer-engines-and-traditional-seo" tabindex="-1"><a class="header-anchor" href="#future-proof-your-discoverability-with-expert-optimization-for-ai-powered-search-answer-engines-and-traditional-seo"><span>Future-proof your discoverability with expert optimization for AI-powered search, answer engines, and traditional SEO</span></a></h2>
 <h3 id="the-search-landscape-has-fundamentally-changed" tabindex="-1"><a class="header-anchor" href="#the-search-landscape-has-fundamentally-changed"><span>The search landscape has fundamentally changed.</span></a></h3>
 <p>Google AI Overviews, ChatGPT, Perplexity, and other AI platforms has transformed how people discover information.</p>
-<p>I help technical companies and data-driven organizations build comprehensive discoverability strategies that work across traditional search engines, generative AI platforms, and answer engines.</p>
+<p>I build comprehensive discoverability strategies that work across traditional search engines, generative AI platforms, and answer engines.</p>
 <h3 id="why-work-with-me" tabindex="-1"><a class="header-anchor" href="#why-work-with-me"><span>Why Work With Me</span></a></h3>
 <ul>
 <li><strong>25+ years software engineering + modern data science</strong> - Rare combination of deep technical skills and search optimization expertise</li>
 <li><strong>Analytics and measurable results</strong> - Every recommendation tied to data and business outcomes</li>
-<li><strong>Hands-on technical implementation</strong> - I write the code, not just the strategy documents</li>
+<li><strong>Hands-on technical implementation</strong> - I can write the code, not just the strategy documents</li>
 </ul>
 <h2 id="the-search-landscape-has-changed" tabindex="-1"><a class="header-anchor" href="#the-search-landscape-has-changed"><span>The Search Landscape Has Changed</span></a></h2>
-<p>Traditional SEO strategies aren't enough anymore. Your potential customers are getting answers from AI overviews, featured snippets, and conversational interfaces—often without clicking through to your website. If your content isn't optimized for these new discovery channels, you're invisible to a growing portion of your audience.</p>
+<p>Traditional SEO strategies aren't enough anymore.</p>
+<p>Your potential customers are getting answers from AI overviews, featured snippets, and conversational interfaces, often without clicking through to your website. If your content isn't optimized for these new discovery channels, you're invisible to a rapidly growing portion of your audience.</p>
 <h3 id="the-challenges-organizations-face" tabindex="-1"><a class="header-anchor" href="#the-challenges-organizations-face"><span>The Challenges Organizations Face</span></a></h3>
 <ul>
 <li><strong>AI overviews and answer engines are replacing traditional search results</strong> - Google's AI Overviews, ChatGPT, Perplexity, and similar platforms now provide direct answers, reducing click-through rates</li>
@@ -19,9 +20,9 @@
 <li><strong>Most organizations lack the technical depth to optimize for GEO/AEO</strong> - This emerging field requires both search expertise and software engineering skills</li>
 </ul>
 <h2 id="how-i-can-help" tabindex="-1"><a class="header-anchor" href="#how-i-can-help"><span>How I Can Help</span></a></h2>
-<p>I combine technical implementation expertise with strategic thinking to build comprehensive discoverability programs. My background in software engineering, data science, and content architecture enables me to work at every level—from hands-on SQL analysis to strategic content planning.</p>
+<p>I combine technical implementation expertise with strategic thinking to build comprehensive discoverability programs. My background in software engineering, data science, and content architecture enables me to work at every level, from hands-on SQL analysis to strategic content planning.</p>
 <h3 id="generative-engine-optimization-geo-strategy" tabindex="-1"><a class="header-anchor" href="#generative-engine-optimization-geo-strategy"><span>Generative Engine Optimization (GEO) Strategy</span></a></h3>
-<p>Ensure your content appears in AI overviews, ChatGPT responses, and other generative search results. I analyze how AI systems surface information, then architect your content to maximize visibility in these emerging channels.</p>
+<p>Ensure your content appears in AI overviews, ChatGPT responses, and other generative search results. I analyze how AI systems surface you information, then architect your content and content  structure to maximize visibility in these emerging channels.</p>
 <p><strong>What's included:</strong></p>
 <ul>
 <li>Current state assessment of AI visibility across major platforms</li>
@@ -127,11 +128,10 @@
 <h2 id="let-s-talk-about-your-discoverability-strategy" tabindex="-1"><a class="header-anchor" href="#let-s-talk-about-your-discoverability-strategy"><span>Let's Talk About Your Discoverability Strategy</span></a></h2>
 <p>The organizations that adapt fastest to AI-powered search will gain significant competitive advantages in visibility, traffic, and customer acquisition. The question isn't whether to optimize for GEO and AEO—it's when and how.</p>
 <p>I'd welcome the opportunity to discuss your specific situation and explore how we might work together.</p>
-<h3 id="get-in-touch" tabindex="-1"><a class="header-anchor" href="#get-in-touch"><span>Get In Touch</span></a></h3>
+<!--
+### Get In Touch -->
 <!-- - **Email:** [your-email@example.com](mailto:your-email@example.com)-->
-<ul>
-<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/stephanie-fuda/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a></li>
-</ul>
+<!-- - **LinkedIn:** [Connect with me on LinkedIn](https://www.linkedin.com/in/stephanie-fuda/) -->
 <!-- - **Schedule a consultation:** [Book a 30-minute call](#) --> <!-- Add your calendar link -->
 <h3 id="next-steps" tabindex="-1"><a class="header-anchor" href="#next-steps"><span>Next Steps</span></a></h3>
 <p>Reach out to schedule a 30-minute discovery call. We'll discuss your current discoverability challenges, GEO/AEO opportunities, and potential engagement models. No pressure—just an honest conversation about whether working together makes sense.</p>

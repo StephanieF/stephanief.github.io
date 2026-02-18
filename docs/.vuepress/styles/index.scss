@@ -12,3 +12,11 @@
         font-size: 1.25rem; // Change to your preferred size
     }
 }
+
+/* show only an anchor glyph in the heading sidebar for the consulting page */
+.page--path-consulting .vp-sidebar a > * { display: none; }
+.page--path-consulting .vp-sidebar a::after {
+  content: '#';
+  display: inline-block;
+  margin-left: 0.25rem;
+}

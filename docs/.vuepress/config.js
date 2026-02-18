@@ -62,13 +62,17 @@ export default defineUserConfig({
     logo: 'StephanieCodes-Logo-2.png',
     navbar: [
       '/',
-      '/projects',
+      '/consulting',
       '/insights/',
+      '/projects',
       '/about',
     ],
     repo: 'https://github.com/StephanieF',
     editLink: false,
     lastUpdated: true,
+    // Use heading-based sidebar (in-page headers) and show H2 and H3 only
+    sidebar: 'heading',
+    sidebarDepth: 2,
   }),
 
   styles: {

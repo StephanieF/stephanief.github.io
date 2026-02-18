@@ -186,3 +186,7 @@ If you are choosing what to prioritize this year, it is worth asking a simple qu
 If the answer is “not really,” that is your roadmap.
 
 Start small, pick one slice of your domain, and treat structured content and [schema.org](https://schema.org) as first‑class citizens. Everything else in your stack gets better when you do.
+
+## Want to work together?
+
+If you're thinking about how to restructure your content, implement schema.org, or use data to drive your SEO/GEO/AEO performance [let's talk](../consulting.md).
