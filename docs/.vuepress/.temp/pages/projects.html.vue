@@ -1,7 +1,8 @@
 <template><div><h1 id="projects" tabindex="-1"><a class="header-anchor" href="#projects"><span>Projects</span></a></h1>
-<p>Personal software engineering projects allow me to practice technical skills, problem-solving abilities, and creativity by experimenting with languages, products, and optimization strategies that I may not use during the execution of my daily work.</p>
+<p>Personal projects allow me to practice technical skills, problem-solving abilities, and creativity by experimenting with languages, products, and optimization strategies that I may not use during the execution of my daily work.</p>
 <p>From performance optimization to discoverability architecture, these projects showcase both technical implementation and strategic thinking.</p>
 <p>Everything is open source; please fork the work or comment back; the best code is collaborative.</p>
+<h2 id="_2026" tabindex="-1"><a class="header-anchor" href="#_2026"><span>2026</span></a></h2>
 <h2 id="_2025" tabindex="-1"><a class="header-anchor" href="#_2025"><span>2025</span></a></h2>
 <h3 id="synthwave-ipsum" tabindex="-1"><a class="header-anchor" href="#synthwave-ipsum"><span>Synthwave Ipsum</span></a></h3>
 <p>As an experiment in &quot;Vibe Coding&quot; I've created a Lorem Ipsum generator, with a goal of keeping the time and cost as low as possible.</p>
