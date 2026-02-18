@@ -15,13 +15,13 @@
 <li>Part 2: Zapier</li>
 <li>Part 3: N8N</li>
 <li>Part 4: Make</li>
-<li>Part 4: Notion</li>
+<li>Part 5: Notion</li>
 </ul>
 <h2 id="all-the-things" tabindex="-1"><a class="header-anchor" href="#all-the-things"><span>All the Things!</span></a></h2>
 <ul>
 <li>Part 1: Cloudflare</li>
 <li>Part 2: Grafana</li>
-<li>Part 3: Azure</li>
+<li>Part 3: Apache</li>
 <li>Part 4: Google</li>
 <li>Part 5: AWS</li>
 </ul>

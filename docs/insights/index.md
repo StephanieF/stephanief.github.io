@@ -61,11 +61,11 @@ As AI-powered search and conversational interfaces reshape how users discover co
 - Part 2: Zapier
 - Part 3: N8N
 - Part 4: Make
-- Part 4: Notion
+- Part 5: Notion
 
 ## All the Things!
 - Part 1: Cloudflare
 - Part 2: Grafana
-- Part 3: Azure
+- Part 3: Apache
 - Part 4: Google
 - Part 5: AWS
