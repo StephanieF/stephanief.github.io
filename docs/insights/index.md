@@ -57,6 +57,8 @@ As AI-powered search and conversational interfaces reshape how users discover co
 
 
 ## Automation as a Service
+In a world where AI is being sold as the future, what most people actually need is simple way to hand off the repetitive tasks that quietly eat their day.
+
 - Part 1: IFTTT - If this then That
 - Part 2: Zapier
 - Part 3: N8N
@@ -64,6 +66,9 @@ As AI-powered search and conversational interfaces reshape how users discover co
 - Part 5: Notion
 
 ## All the Things!
+A hands-on exploration of building a single project using as many products in each ecosystem as possible.
+Even for those of us wary of vendor lock-in, there's something worth understanding about how these tools enhance each other when they work together.
+
 - Part 1: Cloudflare
 - Part 2: Grafana
 - Part 3: Apache

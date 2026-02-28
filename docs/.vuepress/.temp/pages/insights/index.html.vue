@@ -10,6 +10,7 @@
 <li>Part 5: Content Architecture for Conversational Search</li>
 </ul>
 <h2 id="automation-as-a-service" tabindex="-1"><a class="header-anchor" href="#automation-as-a-service"><span>Automation as a Service</span></a></h2>
+<p>In a world where AI is being sold as the future, what most people actually need is simple way to hand off the repetitive tasks that quietly eat their day.</p>
 <ul>
 <li>Part 1: IFTTT - If this then That</li>
 <li>Part 2: Zapier</li>
@@ -18,6 +19,8 @@
 <li>Part 5: Notion</li>
 </ul>
 <h2 id="all-the-things" tabindex="-1"><a class="header-anchor" href="#all-the-things"><span>All the Things!</span></a></h2>
+<p>A hands-on exploration of building a single project using as many products in each ecosystem as possible.
+Even for those of us wary of vendor lock-in, there's something worth understanding about how these tools enhance each other when they work together.</p>
 <ul>
 <li>Part 1: Cloudflare</li>
 <li>Part 2: Grafana</li>
