@@ -4,7 +4,7 @@
 <p>As AI-powered search and conversational interfaces reshape how users discover content, the way we structure and organize information has never been more critical.</p>
 <ul>
 <li>Part 1: <RouteLink to="/insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience.html">Why Structured Content Is the New Foundation for AI, SEO, and User Experience</RouteLink></li>
-<li>Part 2: <a href="">Technical Implementation of GEO Strategies</a></li>
+<li>Part 2: <RouteLink to="/insights/technical-implementation-of-geo-strategies.html">Technical Implementation of GEO Strategies</RouteLink></li>
 <li>Part 3: <a href="">Measuring Success: Analytics for GEO and AEO</a></li>
 <li>Part 4: <a href="">Schema Markup Strategies for AI Discovery</a></li>
 <li>Part 5: <a href="">Content Architecture for Conversational Search</a></li>
