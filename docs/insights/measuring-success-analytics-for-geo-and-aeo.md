@@ -1,5 +1,5 @@
 ---
-title: "Technical Implementation of GEO Strategies"
+title: "Measuring Success: Analytics for GEO and AEO"
 author: "Stephanie Fuda"
 date: 2026-03-12
 description: "How structured content and schema.org become the primary interface for humans *and* machines — actionable steps to move from messy pages to structured, machine‑legible content."
@@ -18,7 +18,7 @@ head:
           "@type": "WebPage",
           "@id": "https://stephanief.github.io/docs/insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience/"
         },
-        "headline": "Why Structured Content Is the New Foundation for AI, SEO, and User Experience",
+        "headline": "Measuring Success: Analytics for GEO and AEO",
         "alternativeHeadline": "How schema.org and content models make AI and search behave better",
         "image": [
           "https://stephanief.github.io/assets/images/structured-content-hero.jpg"
@@ -55,12 +55,3 @@ head:
         "isAccessibleForFree": true
       }
 ---
-
-GEO is often framed as a strategy shift, but its real leverage shows up in the details of your content models, markup, and delivery stack. This post walks through how to implement GEO in a way that aligns with structured content, schema.org, and AI-era search.
-
-## Technical Implementation of GEO Strategies
-
-Before you change templates or pipelines, decide what “good” GEO looks like for your organization. Typical technical goals include:
-- AI systems can identify your key entities (organization, products, people, locations, services) without guessing from layout.
-- AI overviews and assistants consistently cite your domain as a trusted source for specific topics.
-- Your content is retrievable by type, jurisdiction, and freshness for both traditional search and AI/RAG use cases.
