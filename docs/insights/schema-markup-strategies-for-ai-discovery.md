@@ -55,3 +55,4 @@ head:
         "isAccessibleForFree": true
       }
 ---
+Schema Markup Strategies for AI Discovery - Coming Soon

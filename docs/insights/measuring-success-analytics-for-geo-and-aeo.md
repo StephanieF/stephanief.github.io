@@ -4,7 +4,7 @@ author: "Stephanie Fuda"
 date: 2026-03-12
 description: "How structured content and schema.org become the primary interface for humans *and* machines — actionable steps to move from messy pages to structured, machine‑legible content."
 tags: ["structured content","schema.org","AI","SEO","UX"]
-canonical_url: "https://stephanief.github.io/docs/insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience/"
+canonical_url: "https://stephanief.github.io/docs/insights/measuring-success-analytics-for-geo-and-aeo.html"
 image: "/assets/images/structured-content-hero.jpg"
 head:
   - - script
@@ -55,3 +55,4 @@ head:
         "isAccessibleForFree": true
       }
 ---
+Measuring Success: Analytics for GEO and AEO - Coming Soon
