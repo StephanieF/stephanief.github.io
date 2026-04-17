@@ -1,6 +1,5 @@
 import { CodeTabs } from "/home/stephanie-fuda/projects/stephanief.github.io/node_modules/@vuepress/plugin-markdown-tab/dist/client/components/CodeTabs.js";
 import { Tabs } from "/home/stephanie-fuda/projects/stephanief.github.io/node_modules/@vuepress/plugin-markdown-tab/dist/client/components/Tabs.js";
-import "/home/stephanie-fuda/projects/stephanief.github.io/node_modules/@vuepress/plugin-markdown-tab/dist/client/styles/vars.css";
 
 export default {
   enhance: ({ app }) => {
