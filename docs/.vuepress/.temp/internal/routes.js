@@ -13,3 +13,16 @@ export const routes = Object.fromEntries([
   ["/insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience.html", { loader: () => import(/* webpackChunkName: "insights_why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience.html" */"/home/stephanie-fuda/projects/stephanief.github.io/docs/insights/why-structured-content-is-the-new-foundation-for-ai-seo-and-user-experience.md"), meta: {"title":"Why Structured Content Is the New Foundation for AI, SEO, and User Experience"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/home/stephanie-fuda/projects/stephanief.github.io/docs/.vuepress/.temp/pages/404.html.vue"), meta: {"title":""} }],
 ]);
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  __VUE_HMR_RUNTIME__.updateRoutes?.(routes)
+  __VUE_HMR_RUNTIME__.updateRedirects?.(redirects)
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept((m) => {
+    __VUE_HMR_RUNTIME__.updateRoutes?.(m.routes)
+    __VUE_HMR_RUNTIME__.updateRedirects?.(m.redirects)
+  })
+}
