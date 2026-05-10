@@ -3710,16 +3710,6 @@ function isPlainObject$1(payload) {
 	const prototype = Object.getPrototypeOf(payload);
 	return !!prototype && prototype.constructor === Object && prototype === Object.prototype;
 }
-function isNull(payload) {
-	return getType(payload) === "Null";
-}
-function isOneOf(a, b, c, d, e) {
-	return (value) => a(value) || b(value) || !!c && c(value) || !!d && d(value) || !!e && e(value);
-}
-function isUndefined(payload) {
-	return getType(payload) === "Undefined";
-}
-isOneOf(isNull, isUndefined);
 function assignProp(carry, key, newVal, originalObject, includeNonenumerable) {
 	const propType = {}.propertyIsEnumerable.call(originalObject, key) ? "enumerable" : "nonenumerable";
 	if (propType === "enumerable") carry[key] = newVal;
@@ -3823,4 +3813,4 @@ target.__VUE_DEVTOOLS_KIT_BROADCAST_RPC_SERVER__ ??= null;
 //#endregion
 export { removeCustomCommand as a, onDevToolsConnected as i, addCustomTab as n, setupDevToolsPlugin as o, onDevToolsClientConnected as r, addCustomCommand as t };
 
-//# sourceMappingURL=dist-jlnTmUNc.js.map
+//# sourceMappingURL=dist-CI6c7NAI.js.map

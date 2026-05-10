@@ -1,6 +1,6 @@
 //#region node_modules/@vue/shared/dist/shared.esm-bundler.js
 /**
-* @vue/shared v3.5.33
+* @vue/shared v3.5.34
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -229,7 +229,7 @@ function normalizeCssVarValue(value) {
 //#endregion
 //#region node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
 /**
-* @vue/reactivity v3.5.33
+* @vue/reactivity v3.5.34
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -257,9 +257,15 @@ var EffectScope = class {
 		*/
 		this.cleanups = [];
 		this._isPaused = false;
+		this._warnOnRun = true;
 		this.__v_skip = true;
-		this.parent = activeEffectScope;
-		if (!detached && activeEffectScope) this.index = (activeEffectScope.scopes || (activeEffectScope.scopes = [])).push(this) - 1;
+		if (!detached && activeEffectScope) if (activeEffectScope.active) {
+			this.parent = activeEffectScope;
+			this.index = (activeEffectScope.scopes || (activeEffectScope.scopes = [])).push(this) - 1;
+		} else {
+			this._active = false;
+			this._warnOnRun = false;
+		}
 	}
 	get active() {
 		return this._active;
@@ -294,7 +300,7 @@ var EffectScope = class {
 			} finally {
 				activeEffectScope = currentEffectScope;
 			}
-		} else warn$2(`cannot run an inactive effect scope.`);
+		} else if (this._warnOnRun) warn$2(`cannot run an inactive effect scope.`);
 	}
 	/**
 	* This should only be called on non-detached scopes
@@ -385,7 +391,8 @@ var ReactiveEffect = class {
 		*/
 		this.cleanup = void 0;
 		this.scheduler = void 0;
-		if (activeEffectScope && activeEffectScope.active) activeEffectScope.effects.push(this);
+		if (activeEffectScope) if (activeEffectScope.active) activeEffectScope.effects.push(this);
+		else this.flags &= -2;
 	}
 	pause() {
 		this.flags |= 64;
@@ -1711,7 +1718,7 @@ function traverse(value, depth = Infinity, seen) {
 //#endregion
 //#region node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 /**
-* @vue/runtime-core v3.5.33
+* @vue/runtime-core v3.5.34
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -5106,13 +5113,14 @@ function getInvalidTypeMessage(name, value, expectedTypes) {
 	const receivedType = toRawType(value);
 	const expectedValue = styleValue(value, expectedType);
 	const receivedValue = styleValue(value, receivedType);
-	if (expectedTypes.length === 1 && isExplicable(expectedType) && !isBoolean(expectedType, receivedType)) message += ` with value ${expectedValue}`;
+	if (expectedTypes.length === 1 && isExplicable(expectedType) && isCoercible(expectedType, receivedType)) message += ` with value ${expectedValue}`;
 	message += `, got ${receivedType} `;
 	if (isExplicable(receivedType)) message += `with value ${receivedValue}.`;
 	return message;
 }
 function styleValue(value, type) {
-	if (type === "String") return `"${value}"`;
+	if (isSymbol(value)) return value.toString();
+	else if (type === "String") return `"${value}"`;
 	else if (type === "Number") return `${Number(value)}`;
 	else return `${value}`;
 }
@@ -5123,8 +5131,11 @@ function isExplicable(type) {
 		"boolean"
 	].some((elem) => type.toLowerCase() === elem);
 }
-function isBoolean(...args) {
-	return args.some((elem) => elem.toLowerCase() === "boolean");
+function isCoercible(...args) {
+	return args.every((elem) => {
+		const value = elem.toLowerCase();
+		return value !== "boolean" && value !== "symbol";
+	});
 }
 var isInternalKey = (key) => key === "_" || key === "_ctx" || key === "$stable";
 var normalizeSlotValue = (value) => isArray(value) ? value.map(normalizeVNode) : [normalizeVNode(value)];
@@ -6163,15 +6174,19 @@ function createSuspenseBoundary(vnode, parentSuspense, parentComponent, containe
 			if (suspense.isHydrating) suspense.isHydrating = false;
 			else if (!resume) {
 				delayEnter = activeBranch && pendingBranch.transition && pendingBranch.transition.mode === "out-in";
+				let hasUpdatedAnchor = false;
 				if (delayEnter) activeBranch.transition.afterLeave = () => {
 					if (pendingId === suspense.pendingId) {
-						move(pendingBranch, container2, anchor === initialAnchor ? next(activeBranch) : anchor, 0);
+						move(pendingBranch, container2, anchor === initialAnchor && !hasUpdatedAnchor ? next(activeBranch) : anchor, 0);
 						queuePostFlushCb(effects);
 						if (isInFallback && vnode2.ssFallback) vnode2.ssFallback.el = null;
 					}
 				};
 				if (activeBranch && !suspense.isFallbackMountPending) {
-					if (parentNode(activeBranch.el) === container2) anchor = next(activeBranch);
+					if (parentNode(activeBranch.el) === container2) {
+						anchor = next(activeBranch);
+						hasUpdatedAnchor = true;
+					}
 					unmount(activeBranch, parentComponent2, suspense, true);
 					if (!delayEnter && isInFallback && vnode2.ssFallback) queuePostRenderEffect(() => vnode2.ssFallback.el = null, suspense);
 				}
@@ -7078,7 +7093,7 @@ function isMemoSame(cached, memo) {
 	if (isBlockTreeEnabled > 0 && currentBlock) currentBlock.push(cached);
 	return true;
 }
-var version = "3.5.33";
+var version = "3.5.34";
 var warn = warn$1;
 var ErrorTypeStrings = ErrorTypeStrings$1;
 var devtools = devtools$1;
@@ -7101,7 +7116,7 @@ var DeprecationTypes = null;
 //#endregion
 //#region node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
 /**
-* @vue/runtime-dom v3.5.33
+* @vue/runtime-dom v3.5.34
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -8578,7 +8593,7 @@ var initDirectivesForSSR = () => {
 //#endregion
 //#region node_modules/vue/dist/vue.runtime.esm-bundler.js
 /**
-* vue v3.5.33
+* vue v3.5.34
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -8592,4 +8607,4 @@ var compile = () => {
 //#endregion
 export { createTextVNode as $, toRefs as $n, resolveTransitionHooks as $t, ErrorCodes as A, customRef as An, onBeforeMount as At, callWithErrorHandling as B, markRaw as Bn, onUpdated as Bt, vShow as C, withDirectives as Cn, isRuntimeOnly as Ct, BaseTransitionPropsValidators as D, ReactiveEffect as Dn, mergeProps as Dt, BaseTransition as E, EffectScope as En, mergeModels as Et, Suspense as F, isProxy as Fn, onMounted as Ft, createBlock as G, readonly as Gn, queuePostFlushCb as Gt, compatUtils as H, onWatcherCleanup as Hn, popScopeId as Ht, Teleport as I, isReactive as In, onRenderTracked as It, createHydrationRenderer as J, shallowReadonly as Jn, renderSlot as Jt, createCommentVNode as K, ref as Kn, registerRuntimeCompiler as Kt, Text as L, isReadonly as Ln, onRenderTriggered as Lt, Fragment as M, effectScope as Mn, onBeforeUpdate as Mt, KeepAlive as N, getCurrentScope as Nn, onDeactivated as Nt, Comment as O, TrackOpTypes as On, nextTick as Ot, Static as P, getCurrentWatcher as Pn, onErrorCaptured as Pt, createStaticVNode as Q, toRef as Qn, resolveFilter as Qt, assertNumber as R, isRef as Rn, onServerPrefetch as Rt, vModelText as S, withDefaults as Sn, isMemoSame as St, withModifiers as T, withScopeId as Tn, mergeDefaults as Tt, computed as U, proxyRefs as Un, provide as Ut, cloneVNode as V, onScopeDispose as Vn, openBlock as Vt, createBaseVNode as W, reactive as Wn, pushScopeId as Wt, createRenderer as X, stop as Xn, resolveDirective as Xt, createPropsRestProxy as Y, shallowRef as Yn, resolveComponent as Yt, createSlots as Z, toRaw as Zn, resolveDynamicComponent as Zt, useShadowRoot as _, watchEffect as _n, hydrateOnInteraction as _t, createApp as a, toHandlers as an, normalizeClass as ar, defineModel as at, vModelRadio as b, withAsyncContext as bn, initCustomFormatter as bt, defineSSRCustomElement as c, useId as cn, toDisplayString as cr, defineSlots as ct, nodeOps as d, useSlots as dn, getTransitionRawChildren as dt, setBlockTracking as en, toValue as er, createVNode as et, patchProp as f, useTemplateRef as fn, guardReactiveProps as ft, useHost as g, watch as gn, hydrateOnIdle as gt, useCssVars as h, warn as hn, hasInjectionContext as ht, VueElement as i, ssrUtils as in, capitalize as ir, defineExpose as it, ErrorTypeStrings as j, effect as jn, onBeforeUnmount as jt, DeprecationTypes as k, TriggerOpTypes as kn, onActivated as kt, hydrate as l, useModel as ln, toHandlerKey as lr, devtools as lt, useCssModule as m, version as mn, handleError as mt, Transition as n, setTransitionHooks as nn, unref as nr, defineComponent as nt, createSSRApp as o, transformVNodeArgs as on, normalizeProps as or, defineOptions as ot, render as p, useTransitionState as pn, h as pt, createElementBlock as q, shallowReactive as qn, renderList as qt, TransitionGroup as r, ssrContextKey as rn, camelize as rr, defineEmits as rt, defineCustomElement as s, useAttrs as sn, normalizeStyle as sr, defineProps as st, compile as t, setDevtoolsHook as tn, triggerRef as tr, defineAsyncComponent as tt, initDirectivesForSSR as u, useSSRContext as un, getCurrentInstance as ut, vModelCheckbox as v, watchPostEffect as vn, hydrateOnMediaQuery as vt, withKeys as w, withMemo as wn, isVNode as wt, vModelSelect as x, withCtx as xn, inject as xt, vModelDynamic as y, watchSyncEffect as yn, hydrateOnVisible as yt, callWithAsyncErrorHandling as z, isShallow as zn, onUnmounted as zt };
 
-//# sourceMappingURL=vue.runtime.esm-bundler-KoyTRBhz.js.map
+//# sourceMappingURL=vue.runtime.esm-bundler-CMLZRQMs.js.map
