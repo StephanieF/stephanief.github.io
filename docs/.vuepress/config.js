@@ -34,7 +34,7 @@ export default defineUserConfig({
     ],
     [
       'script',
-      { defer: true, src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "146bcc21c1e740f880c9bcc995304752"}' }
+      { defer: true, src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{&quot;token&quot;: &quot;146bcc21c1e740f880c9bcc995304752&quot;}' }
     ],
     [
       'script',
