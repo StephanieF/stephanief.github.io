@@ -34,6 +34,10 @@ export default defineUserConfig({
     ],
     [
       'script',
+      { defer: true, src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "146bcc21c1e740f880c9bcc995304752"}' }
+    ],
+    [
+      'script',
       { type: 'application/ld+json' },
       JSON.stringify({
         "@context": "https://schema.org",

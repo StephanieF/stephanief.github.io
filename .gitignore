@@ -1,3 +1,6 @@
+# Dependencies
+node_modules
+
 # VuePress default temp directory
 .vuepress/.temp
 # VuePress default cache directory
