@@ -3812,5 +3812,3 @@ target.__VUE_DEVTOOLS_KIT_VITE_RPC_SERVER__ ??= null;
 target.__VUE_DEVTOOLS_KIT_BROADCAST_RPC_SERVER__ ??= null;
 //#endregion
 export { removeCustomCommand as a, onDevToolsConnected as i, addCustomTab as n, setupDevToolsPlugin as o, onDevToolsClientConnected as r, addCustomCommand as t };
-
-//# sourceMappingURL=dist-Bo5HbopI.js.map

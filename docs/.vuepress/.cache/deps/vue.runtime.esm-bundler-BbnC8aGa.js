@@ -1,6 +1,6 @@
 //#region node_modules/@vue/shared/dist/shared.esm-bundler.js
 /**
-* @vue/shared v3.5.35
+* @vue/shared v3.5.38
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -229,7 +229,7 @@ function normalizeCssVarValue(value) {
 //#endregion
 //#region node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
 /**
-* @vue/reactivity v3.5.35
+* @vue/reactivity v3.5.38
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -1646,8 +1646,9 @@ function watch$1(source, cb, options = EMPTY_OBJ) {
 	if (once && cb) {
 		const _cb = cb;
 		cb = (...args) => {
-			_cb(...args);
+			const res = _cb(...args);
 			watchHandle();
+			return res;
 		};
 	}
 	let oldValue = isMultiSource ? new Array(source.length).fill(INITIAL_WATCHER_VALUE) : INITIAL_WATCHER_VALUE;
@@ -1655,7 +1656,7 @@ function watch$1(source, cb, options = EMPTY_OBJ) {
 		if (!(effect.flags & 1) || !effect.dirty && !immediateFirstRun) return;
 		if (cb) {
 			const newValue = effect.run();
-			if (deep || forceTrigger || (isMultiSource ? newValue.some((v, i) => hasChanged(v, oldValue[i])) : hasChanged(newValue, oldValue))) {
+			if (immediateFirstRun || deep || forceTrigger || (isMultiSource ? newValue.some((v, i) => hasChanged(v, oldValue[i])) : hasChanged(newValue, oldValue))) {
 				if (cleanup) cleanup();
 				const currentWatcher = activeWatcher;
 				activeWatcher = effect;
@@ -1716,7 +1717,7 @@ function traverse(value, depth = Infinity, seen) {
 //#endregion
 //#region node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 /**
-* @vue/runtime-core v3.5.35
+* @vue/runtime-core v3.5.38
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -3540,10 +3541,18 @@ function defineAsyncComponent(source) {
 			const loaded = /* @__PURE__ */ ref(false);
 			const error = /* @__PURE__ */ ref();
 			const delayed = /* @__PURE__ */ ref(!!delay);
-			if (delay) setTimeout(() => {
+			let timeoutTimer;
+			let delayTimer;
+			onUnmounted(() => {
+				if (timeoutTimer != null) clearTimeout(timeoutTimer);
+				if (delayTimer != null) clearTimeout(delayTimer);
+			});
+			if (delay) delayTimer = setTimeout(() => {
+				if (instance.isUnmounted) return;
 				delayed.value = false;
 			}, delay);
-			if (timeout != null) setTimeout(() => {
+			if (timeout != null) timeoutTimer = setTimeout(() => {
+				if (instance.isUnmounted) return;
 				if (!loaded.value && !error.value) {
 					const err = /* @__PURE__ */ new Error(`Async component timed out after ${timeout}ms.`);
 					onError(err);
@@ -3551,9 +3560,14 @@ function defineAsyncComponent(source) {
 				}
 			}, timeout);
 			load().then(() => {
+				if (instance.isUnmounted) return;
 				loaded.value = true;
 				if (instance.parent && isKeepAlive(instance.parent.vnode)) instance.parent.update();
 			}).catch((err) => {
+				if (instance.isUnmounted) {
+					pendingRequest = null;
+					return;
+				}
 				onError(err);
 				error.value = err;
 			});
@@ -4589,12 +4603,13 @@ function useModel(props, name, options = EMPTY_OBJ) {
 				const emittedValue = options.set ? options.set(value) : value;
 				if (!hasChanged(emittedValue, localValue) && !(prevSetValue !== EMPTY_OBJ && hasChanged(value, prevSetValue))) return;
 				const rawProps = i.vnode.props;
-				if (!(rawProps && (name in rawProps || camelizedName in rawProps || hyphenatedName in rawProps) && (`onUpdate:${name}` in rawProps || `onUpdate:${camelizedName}` in rawProps || `onUpdate:${hyphenatedName}` in rawProps))) {
+				const hasVModel = !!(rawProps && (name in rawProps || camelizedName in rawProps || hyphenatedName in rawProps) && (`onUpdate:${name}` in rawProps || `onUpdate:${camelizedName}` in rawProps || `onUpdate:${hyphenatedName}` in rawProps));
+				if (!hasVModel) {
 					localValue = value;
 					trigger();
 				}
 				i.emit(`update:${name}`, emittedValue);
-				if (hasChanged(value, emittedValue) && hasChanged(value, prevSetValue) && !hasChanged(emittedValue, prevEmittedValue)) trigger();
+				if (hasChanged(value, prevSetValue) && (hasChanged(value, emittedValue) && !hasChanged(emittedValue, prevEmittedValue) || hasVModel && prevSetValue !== EMPTY_OBJ && !hasChanged(emittedValue, localValue))) trigger();
 				prevSetValue = value;
 				prevEmittedValue = emittedValue;
 			}
@@ -7090,7 +7105,7 @@ function isMemoSame(cached, memo) {
 	if (isBlockTreeEnabled > 0 && currentBlock) currentBlock.push(cached);
 	return true;
 }
-var version = "3.5.35";
+var version = "3.5.38";
 var warn = warn$1;
 var ErrorTypeStrings = ErrorTypeStrings$1;
 var devtools = devtools$1;
@@ -7113,7 +7128,7 @@ var DeprecationTypes = null;
 //#endregion
 //#region node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
 /**
-* @vue/runtime-dom v3.5.35
+* @vue/runtime-dom v3.5.38
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -8163,7 +8178,7 @@ var TransitionGroup = /* @__PURE__ */ decorate({
 			prevChildren = [];
 			if (children) for (let i = 0; i < children.length; i++) {
 				const child = children[i];
-				if (child.el && child.el instanceof Element) {
+				if (child.el && child.el instanceof Element && !child.el[vShowHidden]) {
 					prevChildren.push(child);
 					setTransitionHooks(child, resolveTransitionHooks(child, cssTransitionProps, state, instance));
 					positionMap.set(child, getPosition(child.el));
@@ -8594,7 +8609,7 @@ var initDirectivesForSSR = () => {
 //#endregion
 //#region node_modules/vue/dist/vue.runtime.esm-bundler.js
 /**
-* vue v3.5.35
+* vue v3.5.38
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -8607,5 +8622,3 @@ var compile = () => {
 };
 //#endregion
 export { createTextVNode as $, toRefs as $n, resolveTransitionHooks as $t, ErrorCodes as A, customRef as An, onBeforeMount as At, callWithErrorHandling as B, markRaw as Bn, onUpdated as Bt, vShow as C, withDirectives as Cn, isRuntimeOnly as Ct, BaseTransitionPropsValidators as D, ReactiveEffect as Dn, mergeProps as Dt, BaseTransition as E, EffectScope as En, mergeModels as Et, Suspense as F, isProxy as Fn, onMounted as Ft, createBlock as G, readonly as Gn, queuePostFlushCb as Gt, compatUtils as H, onWatcherCleanup as Hn, popScopeId as Ht, Teleport as I, isReactive as In, onRenderTracked as It, createHydrationRenderer as J, shallowReadonly as Jn, renderSlot as Jt, createCommentVNode as K, ref as Kn, registerRuntimeCompiler as Kt, Text as L, isReadonly as Ln, onRenderTriggered as Lt, Fragment as M, effectScope as Mn, onBeforeUpdate as Mt, KeepAlive as N, getCurrentScope as Nn, onDeactivated as Nt, Comment as O, TrackOpTypes as On, nextTick as Ot, Static as P, getCurrentWatcher as Pn, onErrorCaptured as Pt, createStaticVNode as Q, toRef as Qn, resolveFilter as Qt, assertNumber as R, isRef as Rn, onServerPrefetch as Rt, vModelText as S, withDefaults as Sn, isMemoSame as St, withModifiers as T, withScopeId as Tn, mergeDefaults as Tt, computed as U, proxyRefs as Un, provide as Ut, cloneVNode as V, onScopeDispose as Vn, openBlock as Vt, createBaseVNode as W, reactive as Wn, pushScopeId as Wt, createRenderer as X, stop as Xn, resolveDirective as Xt, createPropsRestProxy as Y, shallowRef as Yn, resolveComponent as Yt, createSlots as Z, toRaw as Zn, resolveDynamicComponent as Zt, useShadowRoot as _, watchEffect as _n, hydrateOnInteraction as _t, createApp as a, toHandlers as an, normalizeClass as ar, defineModel as at, vModelRadio as b, withAsyncContext as bn, initCustomFormatter as bt, defineSSRCustomElement as c, useId as cn, toDisplayString as cr, defineSlots as ct, nodeOps as d, useSlots as dn, getTransitionRawChildren as dt, setBlockTracking as en, toValue as er, createVNode as et, patchProp as f, useTemplateRef as fn, guardReactiveProps as ft, useHost as g, watch as gn, hydrateOnIdle as gt, useCssVars as h, warn as hn, hasInjectionContext as ht, VueElement as i, ssrUtils as in, capitalize as ir, defineExpose as it, ErrorTypeStrings as j, effect as jn, onBeforeUnmount as jt, DeprecationTypes as k, TriggerOpTypes as kn, onActivated as kt, hydrate as l, useModel as ln, toHandlerKey as lr, devtools as lt, useCssModule as m, version as mn, handleError as mt, Transition as n, setTransitionHooks as nn, unref as nr, defineComponent as nt, createSSRApp as o, transformVNodeArgs as on, normalizeProps as or, defineOptions as ot, render as p, useTransitionState as pn, h as pt, createElementBlock as q, shallowReactive as qn, renderList as qt, TransitionGroup as r, ssrContextKey as rn, camelize as rr, defineEmits as rt, defineCustomElement as s, useAttrs as sn, normalizeStyle as sr, defineProps as st, compile as t, setDevtoolsHook as tn, triggerRef as tr, defineAsyncComponent as tt, initDirectivesForSSR as u, useSSRContext as un, getCurrentInstance as ut, vModelCheckbox as v, watchPostEffect as vn, hydrateOnMediaQuery as vt, withKeys as w, withMemo as wn, isVNode as wt, vModelSelect as x, withCtx as xn, inject as xt, vModelDynamic as y, watchSyncEffect as yn, hydrateOnVisible as yt, callWithAsyncErrorHandling as z, isShallow as zn, onUnmounted as zt };
-
-//# sourceMappingURL=vue.runtime.esm-bundler-CJPQuahF.js.map

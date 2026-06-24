@@ -1,5 +1,5 @@
 import { o as setupDevToolsPlugin } from "./dist-Bo5HbopI.js";
-import { Kn as ref, Nt as onDeactivated, Ot as nextTick, U as computed, Ut as provide, Wn as reactive, Yn as shallowRef, _n as watchEffect, gn as watch, kt as onActivated, nr as unref, nt as defineComponent, pt as h, qn as shallowReactive, ut as getCurrentInstance, xt as inject, zt as onUnmounted } from "./vue.runtime.esm-bundler-CJPQuahF.js";
+import { Kn as ref, Nt as onDeactivated, Ot as nextTick, U as computed, Ut as provide, Wn as reactive, Yn as shallowRef, _n as watchEffect, gn as watch, kt as onActivated, nr as unref, nt as defineComponent, pt as h, qn as shallowReactive, ut as getCurrentInstance, xt as inject, zt as onUnmounted } from "./vue.runtime.esm-bundler-BbnC8aGa.js";
 //#region node_modules/vue-router/dist/useApi-s_02lHjl.js
 /*!
 * vue-router v5.1.0
@@ -2638,5 +2638,3 @@ function createRouter(options) {
 }
 //#endregion
 export { NavigationFailureType, RouterLink, RouterView, START_LOCATION_NORMALIZED as START_LOCATION, createMemoryHistory, createRouter, createRouterMatcher, createWebHashHistory, createWebHistory, isNavigationFailure, loadRouteLocation, matchedRouteKey, onBeforeRouteLeave, onBeforeRouteUpdate, parseQuery, routeLocationKey, routerKey, routerViewLocationKey, stringifyQuery, useLink, useRoute, useRouter, viewDepthKey };
-
-//# sourceMappingURL=vue-router.js.map
