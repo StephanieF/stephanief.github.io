@@ -1,6 +1,6 @@
 //#region node_modules/@vue/shared/dist/shared.esm-bundler.js
 /**
-* @vue/shared v3.5.38
+* @vue/shared v3.5.39
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -229,7 +229,7 @@ function normalizeCssVarValue(value) {
 //#endregion
 //#region node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
 /**
-* @vue/reactivity v3.5.38
+* @vue/reactivity v3.5.39
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -1043,7 +1043,7 @@ var MutableReactiveHandler = class extends BaseReactiveHandler {
 		}
 		const hadKey = isArrayWithIntegerKey ? Number(key) < target.length : hasOwn(target, key);
 		const result = Reflect.set(target, key, value, /* @__PURE__ */ isRef(target) ? target : receiver);
-		if (target === /* @__PURE__ */ toRaw(receiver)) {
+		if (target === /* @__PURE__ */ toRaw(receiver) && result) {
 			if (!hadKey) trigger(target, "add", key, value);
 			else if (hasChanged(value, oldValue)) trigger(target, "set", key, value, oldValue);
 		}
@@ -1717,7 +1717,7 @@ function traverse(value, depth = Infinity, seen) {
 //#endregion
 //#region node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 /**
-* @vue/runtime-core v3.5.38
+* @vue/runtime-core v3.5.39
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -2539,16 +2539,19 @@ var TeleportImpl = {
 				if (!wasDisabled) moveTeleport(n2, container, mainAnchor, internals, 1);
 				else if (n2.props && n1.props && n2.props.to !== n1.props.to) n2.props.to = n1.props.to;
 			} else if ((n2.props && n2.props.to) !== (n1.props && n1.props.to)) {
-				const nextTarget = n2.target = resolveTarget(n2.props, querySelector);
-				if (nextTarget) moveTeleport(n2, nextTarget, null, internals, 0);
-				else warn$1("Invalid Teleport target on update:", target, `(${typeof target})`);
+				const nextTarget = resolveTarget(n2.props, querySelector);
+				if (nextTarget) {
+					n2.target = nextTarget;
+					moveTeleport(n2, nextTarget, null, internals, 0);
+				} else warn$1("Invalid Teleport target on update:", target, `(${typeof target})`);
 			} else if (wasDisabled) moveTeleport(n2, target, targetAnchor, internals, 1);
 			updateCssVars(n2, disabled);
 		}
 	},
 	remove(vnode, parentComponent, parentSuspense, { um: unmount, o: { remove: hostRemove } }, doRemove) {
 		const { shapeFlag, children, anchor, targetStart, targetAnchor, target, props } = vnode;
-		const shouldRemove = doRemove || !isTeleportDisabled(props);
+		const disabled = isTeleportDisabled(props);
+		const shouldRemove = doRemove || !disabled;
 		const pendingMount = pendingMounts.get(vnode);
 		if (pendingMount) {
 			pendingMount.flags |= 8;
@@ -2559,7 +2562,7 @@ var TeleportImpl = {
 			hostRemove(targetAnchor);
 		}
 		doRemove && hostRemove(anchor);
-		if (!pendingMount && shapeFlag & 16) for (let i = 0; i < children.length; i++) {
+		if (!pendingMount && (disabled || target) && shapeFlag & 16) for (let i = 0; i < children.length; i++) {
 			const child = children[i];
 			unmount(child, parentComponent, parentSuspense, shouldRemove, !!child.dynamicChildren);
 		}
@@ -2964,8 +2967,14 @@ function setRef(rawRef, oldRawRef, parentSuspense, vnode, isUnmount = false) {
 			if (oldRawRefAtom.k) refs[oldRawRefAtom.k] = null;
 		}
 	}
-	if (isFunction(ref)) callWithErrorHandling(ref, owner, 12, [value, refs]);
-	else {
+	if (isFunction(ref)) {
+		pauseTracking();
+		try {
+			callWithErrorHandling(ref, owner, 12, [value, refs]);
+		} finally {
+			resetTracking();
+		}
+	} else {
 		const _isString = isString(ref);
 		const _isRef = /* @__PURE__ */ isRef(ref);
 		if (_isString || _isRef) {
@@ -3126,7 +3135,7 @@ function createHydrationFunctions(rendererInternals) {
 	};
 	const hydrateElement = (el, vnode, parentComponent, parentSuspense, slotScopeIds, optimized) => {
 		optimized = optimized || !!vnode.dynamicChildren;
-		const { type, props, patchFlag, shapeFlag, dirs, transition } = vnode;
+		const { type, dynamicProps, props, patchFlag, shapeFlag, dirs, transition } = vnode;
 		const forcePatch = type === "input" || type === "option";
 		{
 			if (dirs) invokeDirectiveHook(vnode, null, parentComponent, "created");
@@ -3172,7 +3181,7 @@ Server rendered element contains more child nodes than client vdom.`);
 				const isCustomElement = el.tagName.includes("-");
 				for (const key in props) {
 					if (!(dirs && dirs.some((d) => d.dir.created)) && propHasMismatch(el, key, props[key], vnode, parentComponent)) logMismatchError();
-					if (forcePatch && (key.endsWith("value") || key === "indeterminate") || isOn(key) && !isReservedProp(key) || key[0] === "." || isCustomElement && !isReservedProp(key)) patchProp(el, key, null, props[key], void 0, parentComponent);
+					if (forcePatch && (key.endsWith("value") || key === "indeterminate") || isOn(key) && !isReservedProp(key) || key[0] === "." || isCustomElement && !isReservedProp(key) || dynamicProps && dynamicProps.includes(key)) patchProp(el, key, null, props[key], void 0, parentComponent);
 				}
 			}
 			let vnodeHooks;
@@ -3230,7 +3239,7 @@ Server rendered element contains fewer child nodes than client vdom.`);
 		}
 	};
 	const handleMismatch = (node, vnode, parentComponent, parentSuspense, slotScopeIds, isFragment) => {
-		if (!isMismatchAllowed(node.parentElement, 1)) {
+		if (!isNodeMismatchAllowed(node, vnode)) {
 			warn$1(`Hydration node mismatch:
 - rendered on server:`, node, node.nodeType === 3 ? `(text)` : isComment(node) && node.data === "[" ? `(start of fragment)` : ``, `
 - expected on client:`, vnode.type);
@@ -3382,7 +3391,9 @@ var MismatchTypeString = {
 };
 function isMismatchAllowed(el, allowedType) {
 	if (allowedType === 0 || allowedType === 1) while (el && !el.hasAttribute(allowMismatchAttr)) el = el.parentElement;
-	const allowedAttr = el && el.getAttribute(allowMismatchAttr);
+	return isMismatchAllowedByAttr(el && el.getAttribute(allowMismatchAttr), allowedType);
+}
+function isMismatchAllowedByAttr(allowedAttr, allowedType) {
 	if (allowedAttr == null) return false;
 	else if (allowedAttr === "") return true;
 	else {
@@ -3390,6 +3401,16 @@ function isMismatchAllowed(el, allowedType) {
 		if (allowedType === 0 && list.includes("children")) return true;
 		return list.includes(MismatchTypeString[allowedType]);
 	}
+}
+function isNodeMismatchAllowed(node, vnode) {
+	return isMismatchAllowed(node.parentElement, 1) || isMismatchAllowedByNode(node) || isMismatchAllowedByVNode(vnode);
+}
+function isMismatchAllowedByNode(node) {
+	return node.nodeType === 1 && isMismatchAllowedByAttr(node.getAttribute(allowMismatchAttr), 1);
+}
+function isMismatchAllowedByVNode({ props }) {
+	const allowedAttr = props && props[allowMismatchAttr];
+	return typeof allowedAttr === "string" && isMismatchAllowedByAttr(allowedAttr, 1);
 }
 var requestIdleCallback = getGlobalThis().requestIdleCallback || ((cb) => setTimeout(cb, 1));
 var cancelIdleCallback = getGlobalThis().cancelIdleCallback || ((id) => clearTimeout(id));
@@ -4699,7 +4720,8 @@ function normalizeEmitsOptions(comp, appContext, asMixin = false) {
 }
 function isEmitListener(options, key) {
 	if (!options || !isOn(key)) return false;
-	key = key.slice(2).replace(/Once$/, "");
+	key = key.slice(2);
+	key = key === "Once" ? key : key.replace(/Once$/, "");
 	return hasOwn(options, key[0].toLowerCase() + key.slice(1)) || hasOwn(options, hyphenate(key)) || hasOwn(options, key);
 }
 var accessedAttrs = false;
@@ -5425,7 +5447,7 @@ function baseCreateRenderer(options, createHydrationFns) {
 		if (vnodeHook = newProps.onVnodeBeforeUpdate) invokeVNodeHook(vnodeHook, parentComponent, n2, n1);
 		if (dirs) invokeDirectiveHook(n2, n1, parentComponent, "beforeUpdate");
 		parentComponent && toggleRecurse(parentComponent, true);
-		if (isHmrUpdating) {
+		if (isHmrUpdating || dynamicChildren && (!n1.dynamicChildren || n1.dynamicChildren.length !== dynamicChildren.length)) {
 			patchFlag = 0;
 			optimized = false;
 			dynamicChildren = null;
@@ -6568,6 +6590,10 @@ function normalizeChildren(vnode, children) {
 		}
 	}
 	else if (isFunction(children)) {
+		if (shapeFlag & 65) {
+			normalizeChildren(vnode, { default: children });
+			return;
+		}
 		children = {
 			default: children,
 			_ctx: currentRenderingInstance
@@ -7105,7 +7131,7 @@ function isMemoSame(cached, memo) {
 	if (isBlockTreeEnabled > 0 && currentBlock) currentBlock.push(cached);
 	return true;
 }
-var version = "3.5.38";
+var version = "3.5.39";
 var warn = warn$1;
 var ErrorTypeStrings = ErrorTypeStrings$1;
 var devtools = devtools$1;
@@ -7128,7 +7154,7 @@ var DeprecationTypes = null;
 //#endregion
 //#region node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
 /**
-* @vue/runtime-dom v3.5.38
+* @vue/runtime-dom v3.5.39
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
@@ -7640,16 +7666,15 @@ function patchEvent(el, rawName, prevValue, nextValue, instance = null) {
 		}
 	}
 }
-var optionsModifierRE = /(?:Once|Passive|Capture)$/;
+var optionsModifierRE = /(Once|Passive|Capture)$/;
+var optionsModifierEventRE = /^on:?(?:Once|Passive|Capture)$/;
 function parseName(name) {
 	let options;
-	if (optionsModifierRE.test(name)) {
-		options = {};
-		let m;
-		while (m = name.match(optionsModifierRE)) {
-			name = name.slice(0, name.length - m[0].length);
-			options[m[0].toLowerCase()] = true;
-		}
+	let m;
+	while ((m = name.match(optionsModifierRE)) && !optionsModifierEventRE.test(name)) {
+		if (!options) options = {};
+		name = name.slice(0, name.length - m[1].length);
+		options[m[1].toLowerCase()] = true;
 	}
 	return [name[2] === ":" ? name.slice(3) : hyphenate(name.slice(2)), options];
 }
@@ -8609,7 +8634,7 @@ var initDirectivesForSSR = () => {
 //#endregion
 //#region node_modules/vue/dist/vue.runtime.esm-bundler.js
 /**
-* vue v3.5.38
+* vue v3.5.39
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
