@@ -66,7 +66,7 @@ Google AI Overviews, ChatGPT, Perplexity, and other AI platforms have transforme
 
 I treat discoverability as a data problem, not a guessing game. I build strategies — backed by SQL analysis, structured data, and hands-on implementation — that work across traditional search engines, generative AI platforms, and answer engines.
 
-This is also the focus of my dedicated consulting practice, [CitedBy](https://citedby.agency/). Read on for how I think about this work, or go straight to [citedby.agency](https://citedby.agency/) to start a project.
+This is also the focus of my dedicated consulting practice, [CitedBy](https://citedby.agency/).
 
 ### Why Work With Me
 
@@ -136,7 +136,7 @@ Content structures that work for both human readers and AI systems.
 
 Organizations that adapt fastest to AI-powered search win on visibility, traffic, and customer acquisition. The question isn't whether to optimize for GEO and AEO—it's when and how.
 
-I take on a limited number of GEO/AEO/SEO engagements directly through my consulting practice, [CitedBy](https://citedby.agency/). That's where to start a project, get a scope, or put time on my calendar.
+I take on a limited number of GEO/AEO/SEO engagements directly through my consulting practice, [CitedBy](https://citedby.agency/contact/).
 
 ### Next Steps
 

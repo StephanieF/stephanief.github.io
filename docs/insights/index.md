@@ -36,6 +36,12 @@ head:
               "position": 2,
               "name": "Technical Implementation of GEO Strategies",
               "url": "https://stephanief.github.io/insights/technical-implementation-of-geo-strategies.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "IFTTT vs. Zapier vs. n8n vs. Make: Comparing Automation Platforms",
+              "url": "https://stephanief.github.io/insights/ifttt-vs-zapier-vs-n8n-vs-make.html"
             }
           ]
         }
@@ -59,11 +65,7 @@ As AI-powered search and conversational interfaces reshape how users discover co
 ## Automation as a Service
 In a world where AI promises to transform the future, what most people truly need right now is a smarter way to reclaim their time — by handing off the repetitive tasks that quietly consume their most productive hours.
 
-- Part 1: IFTTT - If this then That
-- Part 2: Zapier
-- Part 3: N8N
-- Part 4: Make
-- Part 5: Notion
+- [IFTTT vs. Zapier vs. n8n vs. Make: Comparing Automation Platforms](/insights/ifttt-vs-zapier-vs-n8n-vs-make.html)
 
 ## All the Things!
 A hands-on exploration of building a single project using as many products in each ecosystem as possible.
