@@ -37,5 +37,8 @@
   "allowScripts": {
     "@parcel/watcher@2.6.0": true,
     "esbuild@0.28.2": true
+  },
+  "overrides": {
+    "@xmldom/xmldom": "^0.9.12"
   }
 }
