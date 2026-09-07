@@ -116,7 +116,21 @@ From performance optimization to discoverability architecture, these projects sh
 
 Everything is open source; please fork the work or comment back; the best code is collaborative.
 
+## 2027
+The empty glass is full of potential.
+
 ## 2026
+
+### Local Lore - In progress
+A local LLM-driven documentation engine focusing on privacy and domain specific information.
+
+### Lector - In progress
+AI-powered ePub reader for Linux with intelligent pronunciation of technical terms, mathematical notation, and domain-specific vocabulary.
+
+### Arbor - In progress
+
+### Heat Lens - In progress
+AI-powered heatmap and clickmap analytics tool. Integrates with Google Analytics to visualize user behavior through intelligent interaction tracking.
 
 ## 2025
 
