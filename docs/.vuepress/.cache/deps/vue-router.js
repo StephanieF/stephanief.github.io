@@ -1,5 +1,5 @@
 import { o as setupDevToolsPlugin } from "./dist-CjGRH3aa.js";
-import { Kn as ref, Nt as onDeactivated, Ot as nextTick, U as computed, Ut as provide, Wn as reactive, Yn as shallowRef, _n as watchEffect, gn as watch, kt as onActivated, nr as unref, nt as defineComponent, pt as h, qn as shallowReactive, ut as getCurrentInstance, xt as inject, zt as onUnmounted } from "./vue.runtime.esm-bundler-D2wK8Voh.js";
+import { Kn as ref, Nt as onDeactivated, Ot as nextTick, U as computed, Ut as provide, Wn as reactive, Yn as shallowRef, _n as watchEffect, gn as watch, kt as onActivated, nr as unref, nt as defineComponent, pt as h, qn as shallowReactive, ut as getCurrentInstance, xt as inject, zt as onUnmounted } from "./vue.runtime.esm-bundler-Bo_ScjpA.js";
 //#region node_modules/nostics/dist/index.mjs
 /**
 * Renders a diagnostic into a multi-line, unicode-decorated string suitable
@@ -65,6 +65,10 @@ var Diagnostic = class Diagnostic extends Error {
 	*/
 	sources;
 	/**
+	* Structured information associated with this diagnostic code.
+	*/
+	data;
+	/**
 	* Alias for {@link Error.message}: the reason this diagnostic was raised.
 	*/
 	get why() {
@@ -83,6 +87,7 @@ var Diagnostic = class Diagnostic extends Error {
 		this.fix = init.fix;
 		this.docs = init.docs;
 		this.sources = init.sources;
+		this.data = init.data;
 		captureStackTrace?.(this, captureFrom);
 	}
 	/**
@@ -96,6 +101,7 @@ var Diagnostic = class Diagnostic extends Error {
 			docs: this.docs,
 			sources: this.sources,
 			cause: this.cause,
+			data: this.data,
 			stack: this.stack
 		};
 	}
@@ -131,7 +137,8 @@ function defineDiagnostics(options) {
 				fix: toValueWithArgs(def.fix, params),
 				docs,
 				cause: params.cause,
-				sources: params.sources
+				sources: params.sources,
+				data: toValueWithArgs(def.data, params)
 			}, handle);
 			for (const reporter of reporters) reporter(diagnostic, reporterOptions);
 			return diagnostic;

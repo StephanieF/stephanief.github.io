@@ -121,6 +121,10 @@ The empty glass is full of potential.
 
 ## 2026
 
+### Donkey Kong
+It's nice to build something fun and simple.
+I loved the Atari 2600 games and wanted to recreate some classics. Donkey Kong is built Using React/Node/Cloudflare Pages. [Play Donky Kong](https://donkeykong.stephanie-fuda.workers.dev/)  [Repo](https://github.com/StephanieF/DonkeyKong)
+
 ### Local Lore - In progress
 A local LLM-driven documentation engine focusing on privacy and domain specific information.
 
