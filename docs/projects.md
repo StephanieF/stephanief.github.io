@@ -121,9 +121,15 @@ The empty glass is full of potential.
 
 ## 2026
 
-### Donkey Kong
+### Atari 2600 Games
 It's nice to build something fun and simple.
-I loved the Atari 2600 games and wanted to recreate some classics. Donkey Kong is built Using React/Node/Cloudflare Pages. [Play Donky Kong](https://donkeykong.stephanie-fuda.workers.dev/)  [Repo](https://github.com/StephanieF/DonkeyKong)
+I loved the Atari 2600 games and wanted to recreate some classics. Built Using React/Node/Cloudflare Pages.
+
+[Play Donky Kong](https://donkeykong.stephanie-fuda.workers.dev/)  [Repo](https://github.com/StephanieF/DonkeyKong)
+
+[Play Pac-Man](#)  [Repo](https://github.com/StephanieF/Pac-Man)
+
+[Play Blackjack](#)  [Repo](https://github.com/StephanieF/Blackjack)
 
 ### Local Lore - In progress
 A local LLM-driven documentation engine focusing on privacy and domain specific information.

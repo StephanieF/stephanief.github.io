@@ -1,9 +1,9 @@
-import { CodeTabs } from "/home/stephanie-fuda/projects/stephanief.github.io/node_modules/@vuepress/plugin-markdown-tab/dist/client/components/CodeTabs.js";
-import { Tabs } from "/home/stephanie-fuda/projects/stephanief.github.io/node_modules/@vuepress/plugin-markdown-tab/dist/client/components/Tabs.js";
+import { VPCodeTabs } from "/home/stephanie-fuda/projects/stephanief.github.io/node_modules/@vuepress/plugin-markdown-tab/dist/client/components/VPCodeTabs.js";
+import { VPTabs } from "/home/stephanie-fuda/projects/stephanief.github.io/node_modules/@vuepress/plugin-markdown-tab/dist/client/components/VPTabs.js";
 
 export default {
   enhance: ({ app }) => {
-    app.component("CodeTabs", CodeTabs);
-    app.component("Tabs", Tabs);
+    app.component("VPCodeTabs", VPCodeTabs);
+    app.component("VPTabs", VPTabs);
   },
 };
