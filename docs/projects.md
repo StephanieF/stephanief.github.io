@@ -127,7 +127,7 @@ I loved the Atari 2600 games and wanted to recreate some classics. Built Using R
 
 [Play Donky Kong](https://donkeykong.stephanie-fuda.workers.dev/)  [Repo](https://github.com/StephanieF/DonkeyKong)
 
-[Play Pac-Man](pac-man.stephanie-fuda.workers.dev)  [Repo](https://github.com/StephanieF/Pac-Man)
+[Play Pac-Man](https://pac-man.stephanie-fuda.workers.dev/)  [Repo](https://github.com/StephanieF/Pac-Man)
 
 [Play Blackjack](#)  [Repo](https://github.com/StephanieF/Blackjack)
 
